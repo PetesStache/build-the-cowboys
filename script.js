@@ -82,9 +82,12 @@ function createQBcards(){
             .querySelectorAll("#qb .player-card")
             .forEach(x => x.classList.remove("selected"));
 
+
             card.classList.add("selected");
 
+
             team.qb = player;
+
 
             console.log(team);
 
@@ -98,15 +101,19 @@ function createQBcards(){
 }
 
 
+
 // CREATE RB CARDS
 
 function createRBcards(){
 
     let div = document.getElementById("rb");
 
+
     runningbacks.forEach(player => {
 
+
         let card = document.createElement("div");
+
 
         card.className = "player-card";
 
@@ -129,15 +136,18 @@ function createRBcards(){
             <b>${player.visible.speed}</b>
         </div>
 
+
         <div class="stat">
             Vision
             <b>${player.visible.vision}</b>
         </div>
 
+
         <div class="stat">
             Elusiveness
             <b>${player.visible.elusiveness}</b>
         </div>
+
 
         <div class="stat">
             Power
@@ -147,7 +157,9 @@ function createRBcards(){
         `;
 
 
+
         card.onclick = function(){
+
 
             document
             .querySelectorAll("#rb .player-card")
@@ -162,52 +174,74 @@ function createRBcards(){
 
             console.log(team);
 
+
         };
 
 
         div.appendChild(card);
 
+
     });
 
+
 }
+
+
 
 
 // BUILD TEAM BUTTON
 
 function buildTeam(){
 
+
     let seasons = [
+
         "2011 Oklahoma State",
         "2021 Oklahoma State",
         "1988 Oklahoma State"
+
     ];
+
 
 
     let season = seasons[
-        Math.floor(Math.random()*seasons.length)
+        Math.floor(Math.random() * seasons.length)
     ];
+
 
 
     document.getElementById("result").innerHTML = `
 
+
     <h1>🎟 SEASON DRAW</h1>
+
 
     <h2>${season} Schedule</h2>
 
+
     <p>Difficulty: ⭐⭐⭐⭐☆</p>
 
+
     <p>Average Opponent Rating: 87.5</p>
+
 
     <button>
         BEGIN SEASON
     </button>
 
+
     `;
+
 
 
     console.log(team);
 
+
 }
 
 
+
+
 // START APP
+
+loadPlayers();
