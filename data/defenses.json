@@ -1,0 +1,97 @@
+[
+  {
+    "name": "1984 Oklahoma State Defense",
+    "years": "1984",
+    "overall": 95,
+    "tier": "Orange Legend",
+    "visible": {
+      "runDefense": 96,
+      "passDefense": 92,
+      "passRush": 94,
+      "turnovers": 95,
+      "physicality": 99
+    },
+    "hidden": {
+      "clutch": 96,
+      "redZoneDefense": 95,
+      "explosivePlayPrevention": 94,
+      "eraAdjustment": 8
+    }
+  },
+  {
+    "name": "1988 Oklahoma State Defense",
+    "years": "1988",
+    "overall": 94,
+    "tier": "Orange Legend",
+    "visible": {
+      "runDefense": 98,
+      "passDefense": 88,
+      "passRush": 93,
+      "turnovers": 96,
+      "physicality": 99
+    },
+    "hidden": {
+      "clutch": 95,
+      "redZoneDefense": 94,
+      "explosivePlayPrevention": 97,
+      "eraAdjustment": 8
+    }
+  },
+  {
+    "name": "2011 Oklahoma State Defense",
+    "years": "2011",
+    "overall": 90,
+    "tier": "Black Legend",
+    "visible": {
+      "runDefense": 88,
+      "passDefense": 91,
+      "passRush": 89,
+      "turnovers": 99,
+      "physicality": 88
+    },
+    "hidden": {
+      "clutch": 96,
+      "redZoneDefense": 90,
+      "explosivePlayPrevention": 88,
+      "eraAdjustment": 3
+    }
+  },
+  {
+    "name": "2013 Oklahoma State Defense",
+    "years": "2013",
+    "overall": 93,
+    "tier": "Black Legend",
+    "visible": {
+      "runDefense": 94,
+      "passDefense": 91,
+      "passRush": 95,
+      "turnovers": 94,
+      "physicality": 94
+    },
+    "hidden": {
+      "clutch": 94,
+      "redZoneDefense": 93,
+      "explosivePlayPrevention": 92,
+      "eraAdjustment": 3
+    }
+  },
+  {
+    "name": "2021 Oklahoma State Defense",
+    "years": "2021",
+    "overall": 96,
+    "tier": "Orange Legend",
+    "visible": {
+      "runDefense": 99,
+      "passDefense": 94,
+      "passRush": 96,
+      "turnovers": 93,
+      "physicality": 98
+    },
+    "hidden": {
+      "clutch": 99,
+      "redZoneDefense": 97,
+      "explosivePlayPrevention": 98,
+      "eraAdjustment": 2
+    }
+  }
+]
