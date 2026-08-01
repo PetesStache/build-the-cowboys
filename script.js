@@ -539,18 +539,96 @@ function calculateOverall(){
 
 function buildTeam(){
 
-
-    let seasons = [
-
-        "1988 Oklahoma State",
-        "2011 Oklahoma State",
-        "2021 Oklahoma State"
-
+    let season = databases.seasons[
+        Math.floor(Math.random() * databases.seasons.length)
     ];
 
 
-    let season =
-    seasons[Math.floor(Math.random()*seasons.length)];
+    let scheduleHTML = "";
+
+
+    season.games.forEach((game,index)=>{
+
+        scheduleHTML += `
+
+        <p>
+        Week ${index + 1}:
+        ⚔️ ${game.opponent}
+        <br>
+        Opponent Rating:
+        ${game.difficulty}
+        </p>
+
+        `;
+
+    });
+
+
+
+    document.getElementById("result").innerHTML = `
+
+
+    <div class="team-card">
+
+
+        <h1>🎟 SEASON DRAW</h1>
+
+
+        <h2>${season.season}</h2>
+
+
+        <p>
+        Coach:
+        ${season.coach}
+        </p>
+
+
+        <p>
+        Historical Record:
+        ${season.record}
+        </p>
+
+
+        <p>
+        Conference:
+        ${season.conference}
+        </p>
+
+
+        <p>
+        Difficulty:
+        ${"⭐".repeat(season.difficulty)}
+        </p>
+
+
+        <p>
+        Average Opponent Rating:
+        ${season.averageOpponentRating}
+        </p>
+
+
+
+        <h2>
+        Schedule
+        </h2>
+
+
+        ${scheduleHTML}
+
+
+
+        <button>
+        🏈 BEGIN SEASON
+        </button>
+
+
+    </div>
+
+
+    `;
+
+
+}
 
 
 
