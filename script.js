@@ -219,8 +219,6 @@ function createCards(list,type){
 
         <p>${player.years}</p>
 
-        <p>${player.tier}</p>
-
         `;
 
 
