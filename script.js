@@ -13,6 +13,7 @@ let runningbacks = [];
 let receivers = [];
 let tightends = [];
 let offensiveLines = [];
+let defenses = [];
 
 
 // LOAD DATABASES
@@ -22,21 +23,20 @@ async function loadPlayers(){
     const qbResponse = await fetch("data/quarterbacks.json");
     quarterbacks = await qbResponse.json();
 
-
     const rbResponse = await fetch("data/runningbacks.json");
     runningbacks = await rbResponse.json();
-
 
     const wrResponse = await fetch("data/receivers.json");
     receivers = await wrResponse.json();
 
-
     const teResponse = await fetch("data/tightends.json");
     tightends = await teResponse.json();
 
-
     const olResponse = await fetch("data/offensive_lines.json");
     offensiveLines = await olResponse.json();
+
+    const defenseResponse = await fetch("data/defenses.json");
+    defenses = await defenseResponse.json();
 
 
     createQBcards();
@@ -44,12 +44,13 @@ async function loadPlayers(){
     createWRcards();
     createTEcards();
     createOLcards();
+    createDefenseCards();
 
 }
 
 
 
-// GENERIC SINGLE SELECT CARD
+// SINGLE SELECT CARD
 
 function createSingleCard(div, player, html, position){
 
@@ -85,7 +86,7 @@ function createSingleCard(div, player, html, position){
         card.classList.add("selected");
 
 
-        team[position]=player;
+        team[position] = player;
 
 
         console.log(team);
@@ -104,7 +105,6 @@ function createSingleCard(div, player, html, position){
 function createQBcards(){
 
     let div=document.getElementById("qb");
-
 
     quarterbacks.forEach(player=>{
 
@@ -146,7 +146,6 @@ function createQBcards(){
 function createRBcards(){
 
     let div=document.getElementById("rb");
-
 
     runningbacks.forEach(player=>{
 
@@ -209,7 +208,6 @@ function createWRcards(){
 
         <p>${player.tier}</p>
 
-
         <div class="stat">
         Hands
         <b>${player.visible.hands}</b>
@@ -232,20 +230,19 @@ function createWRcards(){
 
             if(team.wr.includes(player)){
 
-                team.wr=team.wr.filter(x=>x!==player);
+                team.wr = team.wr.filter(x=>x!==player);
 
                 card.classList.remove("selected");
 
             }
 
-            else if(team.wr.length<3){
+            else if(team.wr.length < 3){
 
                 team.wr.push(player);
 
                 card.classList.add("selected");
 
             }
-
 
             console.log(team);
 
@@ -265,7 +262,6 @@ function createWRcards(){
 function createTEcards(){
 
     let div=document.getElementById("te");
-
 
     tightends.forEach(player=>{
 
@@ -297,12 +293,11 @@ function createTEcards(){
 
 
 
-// OFFENSIVE LINE
+// OL
 
 function createOLcards(){
 
     let div=document.getElementById("ol");
-
 
     offensiveLines.forEach(player=>{
 
@@ -324,14 +319,53 @@ function createOLcards(){
             Physicality
             <b>${player.visible.physicality}</b>
             </div>
-
-            <div class="stat">
-            Experience
-            <b>${player.visible.experience}</b>
-            </div>
             `,
             "ol"
         );
+
+    });
+
+}
+
+
+
+// DEFENSE
+
+function createDefenseCards(){
+
+    let div=document.getElementById("defense");
+
+
+    defenses.forEach(player=>{
+
+
+        createSingleCard(
+            div,
+            player,
+            `
+            <div class="stat">
+            Run Defense
+            <b>${player.visible.runDefense}</b>
+            </div>
+
+            <div class="stat">
+            Pass Defense
+            <b>${player.visible.passDefense}</b>
+            </div>
+
+            <div class="stat">
+            Pass Rush
+            <b>${player.visible.passRush}</b>
+            </div>
+
+            <div class="stat">
+            Turnovers
+            <b>${player.visible.turnovers}</b>
+            </div>
+            `,
+            "defense"
+        );
+
 
     });
 
