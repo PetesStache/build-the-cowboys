@@ -14,7 +14,8 @@ let databases = {
     wr: [],
     te: [],
     ol: [],
-    defense: []
+    defense: [],
+    seasons: []
 };
 
 
@@ -43,6 +44,8 @@ async function loadPlayers(){
 
     databases.defense = await fetch("data/defenses.json")
         .then(r => r.json());
+    databases.seasons = await fetch("data/seasons.json")
+    .then(r => r.json());
 
 
     showStep();
