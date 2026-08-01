@@ -361,7 +361,6 @@ function nextStep(){
 
 function showFinalTeam(){
 
-
     updateProgress();
 
 
@@ -375,64 +374,135 @@ function showFinalTeam(){
     <div class="team-summary">
 
 
-    <h2>OFFENSE</h2>
+        <h2>🟧 OFFENSE</h2>
 
 
-    <h3>QB</h3>
-    <p>
-    ${team.qb.name}
-    (${team.qb.overall})
-    </p>
+        <div class="team-card">
+
+            <h3>QB</h3>
+            <p>
+            <strong>${team.qb.overall}</strong>
+            ${team.qb.name}
+            <br>
+            <small>${team.qb.years}</small>
+            </p>
+
+        </div>
 
 
-    <h3>RB</h3>
-    <p>
-    ${team.rb.name}
-    (${team.rb.overall})
-    </p>
+
+        <div class="team-card">
+
+            <h3>RB</h3>
+            <p>
+            <strong>${team.rb.overall}</strong>
+            ${team.rb.name}
+            <br>
+            <small>${team.rb.years}</small>
+            </p>
+
+        </div>
 
 
-    <h3>WR CORPS</h3>
 
-    <p>
-    ${team.wr[0].name}
-    (${team.wr[0].overall})
-    <br>
+        <div class="team-card">
 
-    ${team.wr[1].name}
-    (${team.wr[1].overall})
-    <br>
+            <h3>WR</h3>
 
-    ${team.wr[2].name}
-    (${team.wr[2].overall})
-    </p>
+            <p>
+            <strong>${team.wr[0].overall}</strong>
+            ${team.wr[0].name}
+            <br>
 
+            <strong>${team.wr[1].overall}</strong>
+            ${team.wr[1].name}
+            <br>
 
-    <h3>TE</h3>
-    <p>
-    ${team.te.name}
-    (${team.te.overall})
-    </p>
+            <strong>${team.wr[2].overall}</strong>
+            ${team.wr[2].name}
 
+            </p>
 
-    <h3>OFFENSIVE LINE</h3>
-    <p>
-    ${team.ol.name}
-    (${team.ol.overall})
-    </p>
+        </div>
 
 
-    <h2>DEFENSE</h2>
 
 
-    <h3>DEFENSE</h3>
-    <p>
-    ${team.defense.name}
-    (${team.defense.overall})
-    </p>
+        <div class="team-card">
+
+            <h3>TE</h3>
+
+            <p>
+            <strong>${team.te.overall}</strong>
+            ${team.te.name}
+            <br>
+            <small>${team.te.years}</small>
+            </p>
+
+        </div>
 
 
-    <h1>
+
+
+        <div class="team-card">
+
+            <h3>OFFENSIVE LINE</h3>
+
+            <p>
+            <strong>${team.ol.overall}</strong>
+            ${team.ol.name}
+            </p>
+
+        </div>
+
+
+
+        <h2>⚫ DEFENSE</h2>
+
+
+
+        <div class="team-card">
+
+            <h3>DEFENSE</h3>
+
+            <p>
+            <strong>${team.defense.overall}</strong>
+            ${team.defense.name}
+            <br>
+            <small>${team.defense.years}</small>
+            </p>
+
+        </div>
+
+
+
+        <div class="overall-box">
+
+            <h1>
+            TEAM OVERALL
+            </h1>
+
+            <h2>
+            ${calculateOverall()}
+            </h2>
+
+        </div>
+
+
+
+        <button onclick="buildTeam()">
+        🎟 DRAW MY SEASON
+        </button>
+
+
+
+    </div>
+
+
+    `;
+
+
+}
     TEAM OVERALL:
     ${calculateOverall()}
     </h1>
