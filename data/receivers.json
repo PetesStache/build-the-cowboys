@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Justin Blackmon",
+    "years": "2008-2011",
+    "overall": 99,
+    "tier": "Orange Legend",
+    "visible": {
+      "hands": 99,
+      "speed": 93,
+      "routeRunning": 98,
+      "playmaking": 99
+    },
+    "hidden": {
+      "separation": 99,
+      "explosivePlays": 98,
+      "contestedCatch": 99,
+      "redZoneAbility": 98,
+      "consistency": 99,
+      "eraAdjustment": 3
+    }
+  },
+  {
+    "name": "James Washington",
+    "years": "2014-2017",
+    "overall": 96,
+    "tier": "Orange Legend",
+    "visible": {
+      "hands": 98,
+      "speed": 96,
+      "routeRunning": 94,
+      "playmaking": 97
+    },
+    "hidden": {
+      "separation": 96,
+      "explosivePlays": 99,
+      "contestedCatch": 96,
+      "redZoneAbility": 95,
+      "consistency": 97,
+      "eraAdjustment": 3
+    }
+  },
+  {
+    "name": "Dez Bryant",
+    "years": "2007-2009",
+    "overall": 95,
+    "tier": "Orange Legend",
+    "visible": {
+      "hands": 97,
+      "speed": 94,
+      "routeRunning": 92,
+      "playmaking": 98
+    },
+    "hidden": {
+      "separation": 93,
+      "explosivePlays": 97,
+      "contestedCatch": 99,
+      "redZoneAbility": 99,
+      "consistency": 94,
+      "eraAdjustment": 4
+    }
+  },
+  {
+    "name": "Rashaun Woods",
+    "years": "2001-2004",
+    "overall": 93,
+    "tier": "Orange Legend",
+    "visible": {
+      "hands": 96,
+      "speed": 91,
+      "routeRunning": 96,
+      "playmaking": 94
+    },
+    "hidden": {
+      "separation": 96,
+      "explosivePlays": 92,
+      "contestedCatch": 95,
+      "redZoneAbility": 94,
+      "consistency": 96,
+      "eraAdjustment": 6
+    }
+  },
+  {
+    "name": "Hart Lee Dykes",
+    "years": "1984-1987",
+    "overall": 92,
+    "tier": "Orange Legend",
+    "visible": {
+      "hands": 95,
+      "speed": 90,
+      "routeRunning": 94,
+      "playmaking": 93
+    },
+    "hidden": {
+      "separation": 94,
+      "explosivePlays": 90,
+      "contestedCatch": 96,
+      "redZoneAbility": 94,
+      "consistency": 95,
+      "eraAdjustment": 8
+    }
+  },
+  {
+    "name": "Adarius Bowman",
+    "years": "2005-2007",
+    "overall": 90,
+    "tier": "Black Legend",
+    "visible": {
+      "hands": 91,
+      "speed": 92,
+      "routeRunning": 89,
+      "playmaking": 94
+    },
+    "hidden": {
+      "separation": 90,
+      "explosivePlays": 94,
+      "contestedCatch": 96,
+      "redZoneAbility": 95,
+      "consistency": 88,
+      "eraAdjustment": 6
+    }
+  },
+  {
+    "name": "Tylan Wallace",
+    "years": "2017-2020",
+    "overall": 89,
+    "tier": "Black Legend",
+    "visible": {
+      "hands": 92,
+      "speed": 94,
+      "routeRunning": 90,
+      "playmaking": 91
+    },
+    "hidden": {
+      "separation": 90,
+      "explosivePlays": 94,
+      "contestedCatch": 92,
+      "redZoneAbility": 90,
+      "consistency": 91,
+      "eraAdjustment": 4
+    }
+  },
+  {
+    "name": "Josh Stewart",
+    "years": "2011-2013",
+    "overall": 88,
+    "tier": "Black Legend",
+    "visible": {
+      "hands": 93,
+      "speed": 91,
+      "routeRunning": 93,
+      "playmaking": 89
+    },
+    "hidden": {
+      "separation": 94,
+      "explosivePlays": 87,
+      "contestedCatch": 82,
+      "redZoneAbility": 86,
+      "consistency": 94,
+      "eraAdjustment": 5
+    }
+  },
+  {
+    "name": "Dillon Stoner",
+    "years": "2016-2020",
+    "overall": 86,
+    "tier": "Cowboy",
+    "visible": {
+      "hands": 91,
+      "speed": 88,
+      "routeRunning": 90,
+      "playmaking": 86
+    },
+    "hidden": {
+      "separation": 90,
+      "explosivePlays": 84,
+      "contestedCatch": 86,
+      "redZoneAbility": 85,
+      "consistency": 92,
+      "eraAdjustment": 4
+    }
+  },
+  {
+    "name": "Richetti Jones",
+    "years": "1998-2001",
+    "overall": 85,
+    "tier": "Cowboy",
+    "visible": {
+      "hands": 88,
+      "speed": 90,
+      "routeRunning": 87,
+      "playmaking": 86
+    },
+    "hidden": {
+      "separation": 88,
+      "explosivePlays": 86,
+      "contestedCatch": 87,
+      "redZoneAbility": 86,
+      "consistency": 88,
+      "eraAdjustment": 7
+    }
+  }
+]
