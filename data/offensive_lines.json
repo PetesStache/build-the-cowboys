@@ -1,0 +1,92 @@
+[
+  {
+    "name": "2011 Oklahoma State Offensive Line",
+    "years": "2011",
+    "overall": 97,
+    "tier": "Orange Legend",
+    "visible": {
+      "runBlocking": 96,
+      "passProtection": 99,
+      "physicality": 94,
+      "experience": 96
+    },
+    "hidden": {
+      "sacksAllowed": 98,
+      "shortYardage": 95,
+      "zoneBlocking": 97,
+      "eraAdjustment": 3
+    }
+  },
+  {
+    "name": "1988 Oklahoma State Offensive Line",
+    "years": "1988",
+    "overall": 96,
+    "tier": "Orange Legend",
+    "visible": {
+      "runBlocking": 99,
+      "passProtection": 88,
+      "physicality": 99,
+      "experience": 98
+    },
+    "hidden": {
+      "sacksAllowed": 87,
+      "shortYardage": 99,
+      "zoneBlocking": 85,
+      "eraAdjustment": 8
+    }
+  },
+  {
+    "name": "2021 Oklahoma State Offensive Line",
+    "years": "2021",
+    "overall": 91,
+    "tier": "Black Legend",
+    "visible": {
+      "runBlocking": 94,
+      "passProtection": 89,
+      "physicality": 93,
+      "experience": 90
+    },
+    "hidden": {
+      "sacksAllowed": 88,
+      "shortYardage": 95,
+      "zoneBlocking": 92,
+      "eraAdjustment": 2
+    }
+  },
+  {
+    "name": "2023 Oklahoma State Offensive Line",
+    "years": "2023",
+    "overall": 89,
+    "tier": "Black Legend",
+    "visible": {
+      "runBlocking": 96,
+      "passProtection": 82,
+      "physicality": 92,
+      "experience": 87
+    },
+    "hidden": {
+      "sacksAllowed": 82,
+      "shortYardage": 97,
+      "zoneBlocking": 94,
+      "eraAdjustment": 2
+    }
+  },
+  {
+    "name": "2020 Oklahoma State Offensive Line",
+    "years": "2020",
+    "overall": 87,
+    "tier": "Cowboy",
+    "visible": {
+      "runBlocking": 88,
+      "passProtection": 87,
+      "physicality": 86,
+      "experience": 89
+    },
+    "hidden": {
+      "sacksAllowed": 86,
+      "shortYardage": 88,
+      "zoneBlocking": 90,
+      "eraAdjustment": 2
+    }
+  }
+]
