@@ -1,0 +1,135 @@
+[
+  {
+    "season": "1988 Oklahoma State",
+    "difficulty": 4,
+    "averageOpponentRating": 87,
+    "record": "9-4",
+    "conference": "Big Eight",
+    "coach": "Pat Jones",
+    "notes": "A physical Cowboy team built around defense and the running game.",
+    "games": [
+      {
+        "opponent": "Nebraska",
+        "difficulty": 95
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 93
+      },
+      {
+        "opponent": "Missouri",
+        "difficulty": 84
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 78
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 75
+      },
+      {
+        "opponent": "Kansas State",
+        "difficulty": 80
+      },
+      {
+        "opponent": "Colorado",
+        "difficulty": 90
+      },
+      {
+        "opponent": "Texas",
+        "difficulty": 92
+      }
+    ]
+  },
+
+
+  {
+    "season": "2011 Oklahoma State",
+    "difficulty": 5,
+    "averageOpponentRating": 91,
+    "record": "12-1",
+    "conference": "Big 12",
+    "coach": "Mike Gundy",
+    "notes": "High-powered offense led by Brandon Weeden and Justin Blackmon.",
+    "games": [
+      {
+        "opponent": "Texas A&M",
+        "difficulty": 91
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 75
+      },
+      {
+        "opponent": "Missouri",
+        "difficulty": 88
+      },
+      {
+        "opponent": "Baylor",
+        "difficulty": 92
+      },
+      {
+        "opponent": "Kansas State",
+        "difficulty": 94
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 96
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 82
+      },
+      {
+        "opponent": "Texas Tech",
+        "difficulty": 89
+      }
+    ]
+  },
+
+
+  {
+    "season": "2021 Oklahoma State",
+    "difficulty": 5,
+    "averageOpponentRating": 90,
+    "record": "12-2",
+    "conference": "Big 12",
+    "coach": "Mike Gundy",
+    "notes": "Elite defense with a physical identity and a championship run.",
+    "games": [
+      {
+        "opponent": "Boise State",
+        "difficulty": 85
+      },
+      {
+        "opponent": "Kansas State",
+        "difficulty": 92
+      },
+      {
+        "opponent": "Texas",
+        "difficulty": 90
+      },
+      {
+        "opponent": "Baylor",
+        "difficulty": 95
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 88
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 96
+      },
+      {
+        "opponent": "Notre Dame",
+        "difficulty": 94
+      },
+      {
+        "opponent": "Baylor Big 12 Championship",
+        "difficulty": 97
+      }
+    ]
+  }
+]
