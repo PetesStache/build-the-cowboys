@@ -12,6 +12,7 @@ let quarterbacks = [];
 let runningbacks = [];
 let receivers = [];
 let tightends = [];
+let offensiveLines = [];
 
 
 // LOAD DATABASES
@@ -34,19 +35,23 @@ async function loadPlayers(){
     tightends = await teResponse.json();
 
 
+    const olResponse = await fetch("data/offensive_lines.json");
+    offensiveLines = await olResponse.json();
+
+
     createQBcards();
     createRBcards();
     createWRcards();
     createTEcards();
+    createOLcards();
 
 }
 
 
 
-// CARD CREATION HELPER
+// GENERIC SINGLE SELECT CARD
 
-function createCard(div, player, stats, position){
-
+function createSingleCard(div, player, html, position){
 
     let card = document.createElement("div");
 
@@ -65,27 +70,25 @@ function createCard(div, player, stats, position){
 
     <p>${player.tier}</p>
 
-    ${stats}
+    ${html}
 
     `;
 
 
-    card.onclick = function(){
-
+    card.onclick=function(){
 
         document
         .querySelectorAll("#"+position+" .player-card")
-        .forEach(x => x.classList.remove("selected"));
+        .forEach(x=>x.classList.remove("selected"));
 
 
         card.classList.add("selected");
 
 
-        team[position] = player;
+        team[position]=player;
 
 
         console.log(team);
-
 
     };
 
@@ -96,17 +99,16 @@ function createCard(div, player, stats, position){
 
 
 
-// QB CARDS
+// QB
 
 function createQBcards(){
 
-    let div = document.getElementById("qb");
+    let div=document.getElementById("qb");
 
 
     quarterbacks.forEach(player=>{
 
-
-        createCard(
+        createSingleCard(
             div,
             player,
             `
@@ -133,24 +135,22 @@ function createQBcards(){
             "qb"
         );
 
-
     });
 
 }
 
 
 
-// RB CARDS
+// RB
 
 function createRBcards(){
 
-    let div = document.getElementById("rb");
+    let div=document.getElementById("rb");
 
 
     runningbacks.forEach(player=>{
 
-
-        createCard(
+        createSingleCard(
             div,
             player,
             `
@@ -177,30 +177,27 @@ function createRBcards(){
             "rb"
         );
 
-
     });
 
 }
 
 
 
-// WR CARDS
+// WR
 
 function createWRcards(){
 
-    let div = document.getElementById("wr");
+    let div=document.getElementById("wr");
 
 
     receivers.forEach(player=>{
 
-
-        let card = document.createElement("div");
-
+        let card=document.createElement("div");
 
         card.className="player-card";
 
 
-        card.innerHTML = `
+        card.innerHTML=`
 
         <div class="rating">
         ${player.overall}
@@ -218,22 +215,14 @@ function createWRcards(){
         <b>${player.visible.hands}</b>
         </div>
 
-
         <div class="stat">
         Speed
         <b>${player.visible.speed}</b>
         </div>
 
-
         <div class="stat">
         Route Running
         <b>${player.visible.routeRunning}</b>
-        </div>
-
-
-        <div class="stat">
-        Playmaking
-        <b>${player.visible.playmaking}</b>
         </div>
 
         `;
@@ -241,40 +230,29 @@ function createWRcards(){
 
         card.onclick=function(){
 
-
             if(team.wr.includes(player)){
 
-
-                team.wr = team.wr.filter(
-                    x=>x!==player
-                );
-
+                team.wr=team.wr.filter(x=>x!==player);
 
                 card.classList.remove("selected");
 
-
             }
 
-            else if(team.wr.length < 3){
-
+            else if(team.wr.length<3){
 
                 team.wr.push(player);
 
-
                 card.classList.add("selected");
-
 
             }
 
 
             console.log(team);
 
-
         };
 
 
         div.appendChild(card);
-
 
     });
 
@@ -282,29 +260,22 @@ function createWRcards(){
 
 
 
-
-// TE CARDS
+// TE
 
 function createTEcards(){
 
-    let div = document.getElementById("te");
+    let div=document.getElementById("te");
 
 
     tightends.forEach(player=>{
 
-
-        createCard(
+        createSingleCard(
             div,
             player,
             `
             <div class="stat">
             Hands
             <b>${player.visible.hands}</b>
-            </div>
-
-            <div class="stat">
-            Speed
-            <b>${player.visible.speed}</b>
             </div>
 
             <div class="stat">
@@ -320,6 +291,47 @@ function createTEcards(){
             "te"
         );
 
+    });
+
+}
+
+
+
+// OFFENSIVE LINE
+
+function createOLcards(){
+
+    let div=document.getElementById("ol");
+
+
+    offensiveLines.forEach(player=>{
+
+        createSingleCard(
+            div,
+            player,
+            `
+            <div class="stat">
+            Run Blocking
+            <b>${player.visible.runBlocking}</b>
+            </div>
+
+            <div class="stat">
+            Pass Protection
+            <b>${player.visible.passProtection}</b>
+            </div>
+
+            <div class="stat">
+            Physicality
+            <b>${player.visible.physicality}</b>
+            </div>
+
+            <div class="stat">
+            Experience
+            <b>${player.visible.experience}</b>
+            </div>
+            `,
+            "ol"
+        );
 
     });
 
@@ -331,19 +343,19 @@ function createTEcards(){
 
 function buildTeam(){
 
-    let seasons = [
+    let seasons=[
         "2011 Oklahoma State",
         "2021 Oklahoma State",
         "1988 Oklahoma State"
     ];
 
 
-    let season = seasons[
+    let season=seasons[
         Math.floor(Math.random()*seasons.length)
     ];
 
 
-    document.getElementById("result").innerHTML = `
+    document.getElementById("result").innerHTML=`
 
     <h1>🎟 SEASON DRAW</h1>
 
@@ -358,7 +370,6 @@ function buildTeam(){
     </button>
 
     `;
-
 
 }
 
