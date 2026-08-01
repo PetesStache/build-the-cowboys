@@ -503,26 +503,6 @@ function showFinalTeam(){
 
 
 }
-    TEAM OVERALL:
-    ${calculateOverall()}
-    </h1>
-
-
-    <button onclick="buildTeam()">
-    🎟 DRAW MY SEASON
-    </button>
-
-
-    </div>
-
-
-    `;
-
-
-}
-
-
-
 // CALCULATE TEAM OVERALL
 
 function calculateOverall(){
