@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Brandon Weeden",
+    "years": "2010-2011",
+    "overall": 95,
+    "arm": 99,
+    "accuracy": 96,
+    "mobility": 72,
+    "clutch": 96,
+    "leadership": 95
+  },
+  {
+    "name": "Mason Rudolph",
+    "years": "2015-2017",
+    "overall": 94,
+    "arm": 96,
+    "accuracy": 94,
+    "mobility": 78,
+    "clutch": 92,
+    "leadership": 96
+  },
+  {
+    "name": "Zac Robinson",
+    "years": "2006-2009",
+    "overall": 88,
+    "arm": 90,
+    "accuracy": 88,
+    "mobility": 85,
+    "clutch": 87,
+    "leadership": 90
+  },
+  {
+    "name": "Mike Gundy",
+    "years": "1986-1989",
+    "overall": 87,
+    "arm": 90,
+    "accuracy": 88,
+    "mobility": 70,
+    "clutch": 90,
+    "leadership": 92
+  }
+]
