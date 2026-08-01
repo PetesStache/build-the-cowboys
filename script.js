@@ -213,3 +213,4 @@ function buildTeam(){
 // START APP
 
 loadPlayers();
+alert("NEW VERSION LOADED");
