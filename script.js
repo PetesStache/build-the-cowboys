@@ -553,7 +553,7 @@ function buildTeam(){
 
         <p>
         Week ${index + 1}:
-        ⚔️ ${game.opponent}
+         ${game.opponent}
         <br>
         Opponent Rating:
         ${game.difficulty}
