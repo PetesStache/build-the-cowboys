@@ -505,26 +505,23 @@ function showFinalTeam(){
 
 function calculateOverall(){
 
-
     let total = 0;
 
-
-    total += team.qb.overall;
+    total += team.qb.overall * 2;
     total += team.rb.overall;
-    total += team.te.overall;
-    total += team.ol.overall;
-    total += team.defense.overall;
-
-
+    
     team.wr.forEach(player=>{
-
         total += player.overall;
-
     });
 
+    total += team.te.overall;
+    total += team.ol.overall * 2;
+    total += team.defense.overall * 2;
 
-    return Math.round(total / 9);
 
+    let weight = 2 + 1 + 3 + 1 + 2 + 2;
+
+    return Math.round(total / weight);
 
 }
 // SEASON DRAW
