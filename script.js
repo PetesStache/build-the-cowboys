@@ -614,13 +614,150 @@ function buildTeam(){
 
 
         ${scheduleHTML}
+function startSeason(season){
+
+    let teamOverall = calculateOverall();
+
+    let wins = 0;
+    let losses = 0;
+
+    let results = "";
+
+
+    season.games.forEach((game,index)=>{
+
+
+        let advantage = teamOverall - game.difficulty;
+
+
+        let chance = Math.random() * 100;
+
+
+        let winChance = 50 + advantage;
+
+
+        if(winChance > 85){
+            winChance = 85;
+        }
+
+        if(winChance < 15){
+            winChance = 15;
+        }
+
+
+        let won = chance < winChance;
+
+
+        let teamScore;
+        let opponentScore;
+
+
+        if(won){
+
+            wins++;
+
+            teamScore = Math.floor(
+                28 + Math.random()*14
+            );
+
+            opponentScore = Math.floor(
+                10 + Math.random()*17
+            );
+
+
+            results += `
+            <p>
+            ✅ Game ${index+1}: 
+            ${game.opponent}
+            <br>
+            ${teamScore}-${opponentScore}
+            </p>
+            `;
+
+        }
+
+
+        else{
+
+            losses++;
+
+            opponentScore = Math.floor(
+                24 + Math.random()*20
+            );
+
+            teamScore = Math.floor(
+                10 + Math.random()*17
+            );
+
+
+            results += `
+            <p>
+            ❌ Game ${index+1}: 
+            ${game.opponent}
+            <br>
+            ${teamScore}-${opponentScore}
+            </p>
+            `;
+
+        }
+
+
+    });
 
 
 
-        <button>
-        🏈 BEGIN SEASON
-        </button>
+    document.getElementById("result").innerHTML = `
 
+
+    <div class="team-card">
+
+    <h1>
+    🏆 SEASON RESULTS
+    </h1>
+
+
+    <h2>
+    ${season.season}
+    </h2>
+
+
+    <h1>
+    Record:
+    ${wins}-${losses}
+    </h1>
+
+
+    <h3>
+    Team Overall:
+    ${teamOverall}
+    </h3>
+
+
+    <h2>
+    Games
+    </h2>
+
+
+    ${results}
+
+
+    <button onclick="location.reload()">
+    🔄 BUILD NEW TEAM
+    </button>
+
+
+    </div>
+
+
+    `;
+
+
+}
+
+
+        <button onclick="startSeason(season)">
+🏈 BEGIN SEASON
+</button>
 
     </div>
 
