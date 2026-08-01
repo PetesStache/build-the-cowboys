@@ -44,8 +44,9 @@ async function loadPlayers(){
 
     databases.defense = await fetch("data/defenses.json")
         .then(r => r.json());
+
     databases.seasons = await fetch("data/seasons.json")
-    .then(r => r.json());
+        .then(r => r.json());
 
 
     showStep();
@@ -78,7 +79,6 @@ function updateProgress(){
 
     steps.forEach((step,index)=>{
 
-
         if(index < currentIndex){
 
             html += `
@@ -109,7 +109,6 @@ function updateProgress(){
 
         }
 
-
     });
 
 
@@ -135,62 +134,38 @@ function showStep(){
 
 
     if(currentStep === "qb"){
-
-        title.innerHTML =
-        "Choose Your Quarterback";
-
+        title.innerHTML = "Choose Your Quarterback";
         createCards(databases.qb,"qb");
-
     }
 
 
     if(currentStep === "rb"){
-
-        title.innerHTML =
-        "Choose Your Running Back";
-
+        title.innerHTML = "Choose Your Running Back";
         createCards(databases.rb,"rb");
-
     }
 
 
     if(currentStep === "wr"){
-
-        title.innerHTML =
-        "Choose Your Wide Receivers (Pick 3)";
-
+        title.innerHTML = "Choose Your Wide Receivers (Pick 3)";
         createCards(databases.wr,"wr");
-
     }
 
 
     if(currentStep === "te"){
-
-        title.innerHTML =
-        "Choose Your Tight End";
-
+        title.innerHTML = "Choose Your Tight End";
         createCards(databases.te,"te");
-
     }
 
 
     if(currentStep === "ol"){
-
-        title.innerHTML =
-        "Choose Your Offensive Line";
-
+        title.innerHTML = "Choose Your Offensive Line";
         createCards(databases.ol,"ol");
-
     }
 
 
     if(currentStep === "defense"){
-
-        title.innerHTML =
-        "Choose Your Defense";
-
+        title.innerHTML = "Choose Your Defense";
         createCards(databases.defense,"defense");
-
     }
 
 }
@@ -237,50 +212,44 @@ function createCards(list,type){
 
     });
 
+}
 
-}// SELECT PLAYER
+
+
+// SELECT PLAYER
 
 function selectPlayer(player,type,card){
 
-
-    // WIDE RECEIVER LOGIC
 
     if(type === "wr"){
 
 
         if(team.wr.includes(player)){
 
-
             team.wr =
             team.wr.filter(x => x !== player);
 
-
             card.classList.remove("selected");
-
 
         }
 
-        else if(team.wr.length < 3){
 
+        else if(team.wr.length < 3){
 
             team.wr.push(player);
 
-
             card.classList.add("selected");
-
 
         }
 
 
         if(team.wr.length === 3){
 
-
             setTimeout(()=>{
 
                 nextStep();
 
             },700);
-
 
         }
 
@@ -304,11 +273,7 @@ function selectPlayer(player,type,card){
     },700);
 
 
-
 }
-
-
-
 // MOVE TO NEXT POSITION
 
 function nextStep(){
@@ -355,8 +320,8 @@ function nextStep(){
 
     showStep();
 
-
 }
+
 
 
 
@@ -380,9 +345,11 @@ function showFinalTeam(){
         <h2>🟧 OFFENSE</h2>
 
 
+
         <div class="team-card">
 
             <h3>QB</h3>
+
             <p>
             <strong>${team.qb.overall}</strong>
             ${team.qb.name}
@@ -394,9 +361,11 @@ function showFinalTeam(){
 
 
 
+
         <div class="team-card">
 
             <h3>RB</h3>
+
             <p>
             <strong>${team.rb.overall}</strong>
             ${team.rb.name}
@@ -408,17 +377,21 @@ function showFinalTeam(){
 
 
 
+
         <div class="team-card">
 
             <h3>WR</h3>
 
             <p>
+
             <strong>${team.wr[0].overall}</strong>
             ${team.wr[0].name}
+
             <br>
 
             <strong>${team.wr[1].overall}</strong>
             ${team.wr[1].name}
+
             <br>
 
             <strong>${team.wr[2].overall}</strong>
@@ -436,10 +409,14 @@ function showFinalTeam(){
             <h3>TE</h3>
 
             <p>
+
             <strong>${team.te.overall}</strong>
             ${team.te.name}
+
             <br>
+
             <small>${team.te.years}</small>
+
             </p>
 
         </div>
@@ -452,15 +429,19 @@ function showFinalTeam(){
             <h3>OFFENSIVE LINE</h3>
 
             <p>
+
             <strong>${team.ol.overall}</strong>
             ${team.ol.name}
+
             </p>
 
         </div>
 
 
 
+
         <h2>⚫ DEFENSE</h2>
+
 
 
 
@@ -469,13 +450,19 @@ function showFinalTeam(){
             <h3>DEFENSE</h3>
 
             <p>
+
             <strong>${team.defense.overall}</strong>
             ${team.defense.name}
+
             <br>
+
             <small>${team.defense.years}</small>
+
             </p>
 
         </div>
+
+
 
 
 
@@ -485,6 +472,7 @@ function showFinalTeam(){
             TEAM OVERALL
             </h1>
 
+
             <h2>
             ${calculateOverall()}
             </h2>
@@ -493,8 +481,11 @@ function showFinalTeam(){
 
 
 
+
         <button onclick="buildTeam()">
+
         🎟 DRAW MY SEASON
+
         </button>
 
 
@@ -506,6 +497,10 @@ function showFinalTeam(){
 
 
 }
+
+
+
+
 // CALCULATE TEAM OVERALL
 
 function calculateOverall(){
@@ -532,10 +527,7 @@ function calculateOverall(){
 
 
 }
-
-
-
-// SEASON DRAW PLACEHOLDER
+// SEASON DRAW
 
 function buildTeam(){
 
@@ -549,17 +541,29 @@ function buildTeam(){
 
     season.games.forEach((game,index)=>{
 
+
         scheduleHTML += `
 
-        <p>
-        Week ${index + 1}:
-         ${game.opponent}
-        <br>
-        Opponent Rating:
-        ${game.difficulty}
-        </p>
+        <div class="team-card">
+
+            <h3>
+            Week ${index + 1}
+            </h3>
+
+            <p>
+            Opponent:
+            ${game.opponent}
+            </p>
+
+            <p>
+            Opponent Rating:
+            ${game.difficulty}
+            </p>
+
+        </div>
 
         `;
+
 
     });
 
@@ -571,10 +575,17 @@ function buildTeam(){
     <div class="team-card">
 
 
-        <h1>🎟 SEASON DRAW</h1>
+        <h1>
+        🎟 SEASON DRAW
+        </h1>
 
 
-        <h2>${season.season}</h2>
+
+        <h2>
+        ${season.season}
+        </h2>
+
+
 
 
         <p>
@@ -583,10 +594,12 @@ function buildTeam(){
         </p>
 
 
+
         <p>
         Historical Record:
         ${season.record}
         </p>
+
 
 
         <p>
@@ -595,10 +608,12 @@ function buildTeam(){
         </p>
 
 
+
         <p>
         Difficulty:
         ${"⭐".repeat(season.difficulty)}
         </p>
+
 
 
         <p>
@@ -608,20 +623,46 @@ function buildTeam(){
 
 
 
+
         <h2>
         Schedule
         </h2>
 
 
+
         ${scheduleHTML}
+
+
+
+
+        <button onclick='startSeason(${JSON.stringify(season)})'>
+
+        🏈 BEGIN SEASON
+
+        </button>
+
+
+
+    </div>
+
+
+    `;
+
+
+}
+// START SEASON SIMULATION
+
 function startSeason(season){
 
     let teamOverall = calculateOverall();
 
+
     let wins = 0;
     let losses = 0;
 
+
     let results = "";
+
 
 
     season.games.forEach((game,index)=>{
@@ -630,74 +671,122 @@ function startSeason(season){
         let advantage = teamOverall - game.difficulty;
 
 
-        let chance = Math.random() * 100;
-
-
         let winChance = 50 + advantage;
 
 
+
+        // Keep games competitive
+
         if(winChance > 85){
+
             winChance = 85;
+
         }
+
 
         if(winChance < 15){
+
             winChance = 15;
+
         }
 
 
-        let won = chance < winChance;
+
+        let won = Math.random() * 100 < winChance;
+
 
 
         let teamScore;
         let opponentScore;
 
 
+
+
         if(won){
+
 
             wins++;
 
+
             teamScore = Math.floor(
-                28 + Math.random()*14
+                28 + Math.random() * 14
             );
 
+
             opponentScore = Math.floor(
-                10 + Math.random()*17
+                10 + Math.random() * 17
             );
+
 
 
             results += `
+
+            <div class="team-card">
+
+            <h3>
+            ✅ Week ${index + 1}
+            </h3>
+
+
             <p>
-            ✅ Game ${index+1}: 
-            ${game.opponent}
-            <br>
-            ${teamScore}-${opponentScore}
+            vs ${game.opponent}
             </p>
+
+
+            <h2>
+            ${teamScore} - ${opponentScore}
+            </h2>
+
+
+            </div>
+
             `;
+
 
         }
 
 
+
         else{
+
 
             losses++;
 
+
             opponentScore = Math.floor(
-                24 + Math.random()*20
+                24 + Math.random() * 20
             );
 
+
             teamScore = Math.floor(
-                10 + Math.random()*17
+                10 + Math.random() * 17
             );
+
 
 
             results += `
+
+            <div class="team-card">
+
+            <h3>
+            ❌ Week ${index + 1}
+            </h3>
+
+
             <p>
-            ❌ Game ${index+1}: 
-            ${game.opponent}
-            <br>
-            ${teamScore}-${opponentScore}
+            vs ${game.opponent}
             </p>
+
+
+            <h2>
+            ${teamScore} - ${opponentScore}
+            </h2>
+
+
+            </div>
+
             `;
+
 
         }
 
@@ -706,58 +795,50 @@ function startSeason(season){
 
 
 
+
     document.getElementById("result").innerHTML = `
 
 
     <div class="team-card">
 
-    <h1>
-    🏆 SEASON RESULTS
-    </h1>
+
+        <h1>
+        🏆 SEASON RESULTS
+        </h1>
 
 
-    <h2>
-    ${season.season}
-    </h2>
+
+        <h2>
+        ${season.season}
+        </h2>
 
 
-    <h1>
-    Record:
-    ${wins}-${losses}
-    </h1>
 
 
-    <h3>
-    Team Overall:
-    ${teamOverall}
-    </h3>
+        <h1>
+        ${wins}-${losses}
+        </h1>
 
 
-    <h2>
-    Games
-    </h2>
+
+        <h3>
+        Team Overall:
+        ${teamOverall}
+        </h3>
 
 
-    ${results}
+
+        ${results}
 
 
-    <button onclick="location.reload()">
-    🔄 BUILD NEW TEAM
-    </button>
+
+        <button onclick="location.reload()">
+
+        🔄 BUILD NEW TEAM
+
+        </button>
 
 
-    </div>
-
-
-    `;
-
-
-}
-
-
-        <button onclick="startSeason(season)">
-🏈 BEGIN SEASON
-</button>
 
     </div>
 
@@ -766,6 +847,10 @@ function startSeason(season){
 
 
 }
+
+
+
+
 
 // START APP
 
