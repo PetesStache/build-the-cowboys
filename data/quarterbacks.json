@@ -2,41 +2,201 @@
   {
     "name": "Brandon Weeden",
     "years": "2010-2011",
-    "overall": 95,
-    "arm": 99,
-    "accuracy": 96,
-    "mobility": 72,
-    "clutch": 96,
-    "leadership": 95
+    "overall": 96,
+    "tier": "Orange Legend",
+    "visible": {
+      "armTalent": 99,
+      "accuracy": 97,
+      "playmaking": 96,
+      "clutch": 97
+    },
+    "hidden": {
+      "passingAbility": 99,
+      "explosivePlays": 96,
+      "pressureHandling": 95,
+      "decisionMaking": 95,
+      "consistency": 98,
+      "eraAdjustment": 3
+    }
   },
   {
     "name": "Mason Rudolph",
     "years": "2015-2017",
-    "overall": 94,
-    "arm": 96,
-    "accuracy": 94,
-    "mobility": 78,
-    "clutch": 92,
-    "leadership": 96
-  },
-  {
-    "name": "Zac Robinson",
-    "years": "2006-2009",
-    "overall": 88,
-    "arm": 90,
-    "accuracy": 88,
-    "mobility": 85,
-    "clutch": 87,
-    "leadership": 90
+    "overall": 95,
+    "tier": "Orange Legend",
+    "visible": {
+      "armTalent": 96,
+      "accuracy": 95,
+      "playmaking": 94,
+      "clutch": 94
+    },
+    "hidden": {
+      "passingAbility": 97,
+      "explosivePlays": 93,
+      "pressureHandling": 95,
+      "decisionMaking": 96,
+      "consistency": 97,
+      "eraAdjustment": 3
+    }
   },
   {
     "name": "Mike Gundy",
     "years": "1986-1989",
+    "overall": 92,
+    "tier": "Orange Legend",
+    "visible": {
+      "armTalent": 91,
+      "accuracy": 90,
+      "playmaking": 89,
+      "clutch": 95
+    },
+    "hidden": {
+      "passingAbility": 92,
+      "explosivePlays": 88,
+      "pressureHandling": 95,
+      "decisionMaking": 94,
+      "consistency": 93,
+      "eraAdjustment": 8
+    }
+  },
+  {
+    "name": "Zac Robinson",
+    "years": "2006-2009",
+    "overall": 90,
+    "tier": "Orange Legend",
+    "visible": {
+      "armTalent": 91,
+      "accuracy": 91,
+      "playmaking": 90,
+      "clutch": 89
+    },
+    "hidden": {
+      "passingAbility": 91,
+      "explosivePlays": 90,
+      "pressureHandling": 89,
+      "decisionMaking": 92,
+      "consistency": 91,
+      "eraAdjustment": 5
+    }
+  },
+  {
+    "name": "Spencer Sanders",
+    "years": "2019-2022",
+    "overall": 89,
+    "tier": "Orange Legend",
+    "visible": {
+      "armTalent": 90,
+      "accuracy": 84,
+      "playmaking": 97,
+      "clutch": 88
+    },
+    "hidden": {
+      "passingAbility": 86,
+      "explosivePlays": 99,
+      "pressureHandling": 84,
+      "decisionMaking": 83,
+      "consistency": 85,
+      "eraAdjustment": 5
+    }
+  },
+  {
+    "name": "J.W. Walsh",
+    "years": "2012-2015",
+    "overall": 88,
+    "tier": "Orange Legend",
+    "visible": {
+      "armTalent": 86,
+      "accuracy": 85,
+      "playmaking": 96,
+      "clutch": 92
+    },
+    "hidden": {
+      "passingAbility": 86,
+      "explosivePlays": 96,
+      "pressureHandling": 92,
+      "decisionMaking": 87,
+      "consistency": 88,
+      "eraAdjustment": 5
+    }
+  },
+  {
+    "name": "Josh Fields",
+    "years": "2001-2004",
     "overall": 87,
-    "arm": 90,
-    "accuracy": 88,
-    "mobility": 70,
-    "clutch": 90,
-    "leadership": 92
+    "tier": "Black Legend",
+    "visible": {
+      "armTalent": 90,
+      "accuracy": 86,
+      "playmaking": 87,
+      "clutch": 90
+    },
+    "hidden": {
+      "passingAbility": 87,
+      "explosivePlays": 88,
+      "pressureHandling": 89,
+      "decisionMaking": 87,
+      "consistency": 88,
+      "eraAdjustment": 7
+    }
+  },
+  {
+    "name": "Clint Chelf",
+    "years": "2010-2013",
+    "overall": 86,
+    "tier": "Black Legend",
+    "visible": {
+      "armTalent": 84,
+      "accuracy": 84,
+      "playmaking": 90,
+      "clutch": 93
+    },
+    "hidden": {
+      "passingAbility": 85,
+      "explosivePlays": 92,
+      "pressureHandling": 92,
+      "decisionMaking": 87,
+      "consistency": 86,
+      "eraAdjustment": 5
+    }
+  },
+  {
+    "name": "Aso Pogi",
+    "years": "1998-2001",
+    "overall": 84,
+    "tier": "Cowboy",
+    "visible": {
+      "armTalent": 84,
+      "accuracy": 84,
+      "playmaking": 82,
+      "clutch": 85
+    },
+    "hidden": {
+      "passingAbility": 84,
+      "explosivePlays": 82,
+      "pressureHandling": 84,
+      "decisionMaking": 85,
+      "consistency": 85,
+      "eraAdjustment": 6
+    }
+  },
+  {
+    "name": "Wes Lunt",
+    "years": "2012",
+    "overall": 83,
+    "tier": "Cowboy",
+    "visible": {
+      "armTalent": 87,
+      "accuracy": 84,
+      "playmaking": 83,
+      "clutch": 82
+    },
+    "hidden": {
+      "passingAbility": 83,
+      "explosivePlays": 85,
+      "pressureHandling": 80,
+      "decisionMaking": 84,
+      "consistency": 82,
+      "eraAdjustment": 4
+    }
   }
 ]
