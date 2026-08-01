@@ -8,190 +8,157 @@ let team = {
 };
 
 
-let quarterbacks = [];
-let runningbacks = [];
-let receivers = [];
-let tightends = [];
-let offensiveLines = [];
-let defenses = [];
+let databases = {
+    qb: [],
+    rb: [],
+    wr: [],
+    te: [],
+    ol: [],
+    defense: []
+};
 
 
-// LOAD DATABASES
+let currentStep = "qb";
+
+
+// LOAD ALL DATABASES
 
 async function loadPlayers(){
 
-    const qbResponse = await fetch("data/quarterbacks.json");
-    quarterbacks = await qbResponse.json();
+    databases.qb = await fetch("data/quarterbacks.json").then(r=>r.json());
 
-    const rbResponse = await fetch("data/runningbacks.json");
-    runningbacks = await rbResponse.json();
+    databases.rb = await fetch("data/runningbacks.json").then(r=>r.json());
 
-    const wrResponse = await fetch("data/receivers.json");
-    receivers = await wrResponse.json();
+    databases.wr = await fetch("data/receivers.json").then(r=>r.json());
 
-    const teResponse = await fetch("data/tightends.json");
-    tightends = await teResponse.json();
+    databases.te = await fetch("data/tightends.json").then(r=>r.json());
 
-    const olResponse = await fetch("data/offensive_lines.json");
-    offensiveLines = await olResponse.json();
+    databases.ol = await fetch("data/offensive_lines.json").then(r=>r.json());
 
-    const defenseResponse = await fetch("data/defenses.json");
-    defenses = await defenseResponse.json();
+    databases.defense = await fetch("data/defenses.json").then(r=>r.json());
 
 
-    createQBcards();
-    createRBcards();
-    createWRcards();
-    createTEcards();
-    createOLcards();
-    createDefenseCards();
+    showStep();
 
 }
 
 
 
-// SINGLE SELECT CARD
+// PROGRESS BAR
 
-function createSingleCard(div, player, html, position){
+function updateProgress(){
 
-    let card = document.createElement("div");
-
-    card.className = "player-card";
-
-
-    card.innerHTML = `
-
-    <div class="rating">
-        ${player.overall}
-    </div>
-
-    <h3>${player.name}</h3>
-
-    <p>${player.years}</p>
-
-    <p>${player.tier}</p>
-
-    ${html}
-
-    `;
+    let steps = [
+        "QB",
+        "RB",
+        "WR",
+        "TE",
+        "OL",
+        "DEF"
+    ];
 
 
-    card.onclick=function(){
-
-        document
-        .querySelectorAll("#"+position+" .player-card")
-        .forEach(x=>x.classList.remove("selected"));
+    let html="";
 
 
-        card.classList.add("selected");
+    steps.forEach(step=>{
 
-
-        team[position] = player;
-
-
-        console.log(team);
-
-    };
-
-
-    div.appendChild(card);
-
-}
-
-
-
-// QB
-
-function createQBcards(){
-
-    let div=document.getElementById("qb");
-
-    quarterbacks.forEach(player=>{
-
-        createSingleCard(
-            div,
-            player,
-            `
-            <div class="stat">
-            Arm Talent
-            <b>${player.visible.armTalent}</b>
-            </div>
-
-            <div class="stat">
-            Accuracy
-            <b>${player.visible.accuracy}</b>
-            </div>
-
-            <div class="stat">
-            Playmaking
-            <b>${player.visible.playmaking}</b>
-            </div>
-
-            <div class="stat">
-            Clutch
-            <b>${player.visible.clutch}</b>
-            </div>
-            `,
-            "qb"
-        );
+        html += `<span style="margin:8px;">${step}</span>`;
 
     });
 
-}
 
-
-
-// RB
-
-function createRBcards(){
-
-    let div=document.getElementById("rb");
-
-    runningbacks.forEach(player=>{
-
-        createSingleCard(
-            div,
-            player,
-            `
-            <div class="stat">
-            Speed
-            <b>${player.visible.speed}</b>
-            </div>
-
-            <div class="stat">
-            Vision
-            <b>${player.visible.vision}</b>
-            </div>
-
-            <div class="stat">
-            Elusiveness
-            <b>${player.visible.elusiveness}</b>
-            </div>
-
-            <div class="stat">
-            Power
-            <b>${player.visible.power}</b>
-            </div>
-            `,
-            "rb"
-        );
-
-    });
+    document.getElementById("progress").innerHTML = html;
 
 }
 
 
 
-// WR
+// SHOW CURRENT STEP
 
-function createWRcards(){
+function showStep(){
 
-    let div=document.getElementById("wr");
+    updateProgress();
 
 
-    receivers.forEach(player=>{
+    let title=document.getElementById("step-title");
+
+    let players=document.getElementById("players");
+
+
+    players.innerHTML="";
+
+
+    if(currentStep==="qb"){
+
+        title.innerHTML="Choose Your Quarterback";
+
+        createCards(databases.qb,"qb");
+
+    }
+
+
+    if(currentStep==="rb"){
+
+        title.innerHTML="Choose Your Running Back";
+
+        createCards(databases.rb,"rb");
+
+    }
+
+
+    if(currentStep==="wr"){
+
+        title.innerHTML="Choose Your Wide Receivers (Pick 3)";
+
+        createCards(databases.wr,"wr");
+
+    }
+
+
+    if(currentStep==="te"){
+
+        title.innerHTML="Choose Your Tight End";
+
+        createCards(databases.te,"te");
+
+    }
+
+
+    if(currentStep==="ol"){
+
+        title.innerHTML="Choose Your Offensive Line";
+
+        createCards(databases.ol,"ol");
+
+    }
+
+
+    if(currentStep==="defense"){
+
+        title.innerHTML="Choose Your Defense";
+
+        createCards(databases.defense,"defense");
+
+    }
+
+
+}
+
+
+
+// CREATE CARDS
+
+function createCards(list,type){
+
+    let div=document.getElementById("players");
+
+
+    list.forEach(player=>{
+
 
         let card=document.createElement("div");
+
 
         card.className="player-card";
 
@@ -208,200 +175,249 @@ function createWRcards(){
 
         <p>${player.tier}</p>
 
-        <div class="stat">
-        Hands
-        <b>${player.visible.hands}</b>
-        </div>
-
-        <div class="stat">
-        Speed
-        <b>${player.visible.speed}</b>
-        </div>
-
-        <div class="stat">
-        Route Running
-        <b>${player.visible.routeRunning}</b>
-        </div>
-
         `;
 
 
         card.onclick=function(){
 
-            if(team.wr.includes(player)){
-
-                team.wr = team.wr.filter(x=>x!==player);
-
-                card.classList.remove("selected");
-
-            }
-
-            else if(team.wr.length < 3){
-
-                team.wr.push(player);
-
-                card.classList.add("selected");
-
-            }
-
-            console.log(team);
+            selectPlayer(player,type,card);
 
         };
 
 
         div.appendChild(card);
 
+
     });
+
 
 }
 
 
 
-// TE
+// SELECT PLAYER
 
-function createTEcards(){
+function selectPlayer(player,type,card){
 
-    let div=document.getElementById("te");
 
-    tightends.forEach(player=>{
 
-        createSingleCard(
-            div,
-            player,
-            `
-            <div class="stat">
-            Hands
-            <b>${player.visible.hands}</b>
-            </div>
+    // WR SPECIAL CASE
 
-            <div class="stat">
-            Blocking
-            <b>${player.visible.blocking}</b>
-            </div>
+    if(type==="wr"){
 
-            <div class="stat">
-            Playmaking
-            <b>${player.visible.playmaking}</b>
-            </div>
-            `,
-            "te"
-        );
 
-    });
+        if(team.wr.includes(player)){
+
+            team.wr =
+            team.wr.filter(x=>x!==player);
+
+            card.classList.remove("selected");
+
+        }
+
+
+        else if(team.wr.length < 3){
+
+            team.wr.push(player);
+
+            card.classList.add("selected");
+
+        }
+
+
+        if(team.wr.length===3){
+
+            setTimeout(()=>{
+
+                nextStep();
+
+            },500);
+
+        }
+
+
+        return;
+
+    }
+
+
+
+    team[type]=player;
+
+
+    card.classList.add("selected");
+
+
+    setTimeout(()=>{
+
+        nextStep();
+
+    },500);
+
+
 
 }
 
 
 
-// OL
+// NEXT STEP
 
-function createOLcards(){
+function nextStep(){
 
-    let div=document.getElementById("ol");
 
-    offensiveLines.forEach(player=>{
+    if(currentStep==="qb"){
 
-        createSingleCard(
-            div,
-            player,
-            `
-            <div class="stat">
-            Run Blocking
-            <b>${player.visible.runBlocking}</b>
-            </div>
+        currentStep="rb";
 
-            <div class="stat">
-            Pass Protection
-            <b>${player.visible.passProtection}</b>
-            </div>
+    }
 
-            <div class="stat">
-            Physicality
-            <b>${player.visible.physicality}</b>
-            </div>
-            `,
-            "ol"
-        );
+    else if(currentStep==="rb"){
 
-    });
+        currentStep="wr";
+
+    }
+
+    else if(currentStep==="wr"){
+
+        currentStep="te";
+
+    }
+
+    else if(currentStep==="te"){
+
+        currentStep="ol";
+
+    }
+
+    else if(currentStep==="ol"){
+
+        currentStep="defense";
+
+    }
+
+    else if(currentStep==="defense"){
+
+        showFinalTeam();
+
+        return;
+
+    }
+
+
+    showStep();
+
 
 }
 
 
 
-// DEFENSE
+// FINAL TEAM
 
-function createDefenseCards(){
-
-    let div=document.getElementById("defense");
+function showFinalTeam(){
 
 
-    defenses.forEach(player=>{
+    document.getElementById("step-title").innerHTML=
+    "🏈 YOUR OKLAHOMA STATE LEGEND TEAM";
 
 
-        createSingleCard(
-            div,
-            player,
-            `
-            <div class="stat">
-            Run Defense
-            <b>${player.visible.runDefense}</b>
-            </div>
-
-            <div class="stat">
-            Pass Defense
-            <b>${player.visible.passDefense}</b>
-            </div>
-
-            <div class="stat">
-            Pass Rush
-            <b>${player.visible.passRush}</b>
-            </div>
-
-            <div class="stat">
-            Turnovers
-            <b>${player.visible.turnovers}</b>
-            </div>
-            `,
-            "defense"
-        );
+    document.getElementById("players").innerHTML=`
 
 
-    });
+    <h3>Quarterback</h3>
+    <p>${team.qb.name} - ${team.qb.overall}</p>
+
+
+    <h3>Running Back</h3>
+    <p>${team.rb.name} - ${team.rb.overall}</p>
+
+
+    <h3>Wide Receivers</h3>
+
+    <p>
+    ${team.wr[0].name}<br>
+    ${team.wr[1].name}<br>
+    ${team.wr[2].name}
+    </p>
+
+
+    <h3>Tight End</h3>
+    <p>${team.te.name}</p>
+
+
+    <h3>Offensive Line</h3>
+    <p>${team.ol.name}</p>
+
+
+    <h3>Defense</h3>
+    <p>${team.defense.name}</p>
+
+
+    <h2>
+    Team Overall:
+    ${calculateOverall()}
+    </h2>
+
+
+    <button onclick="buildTeam()">
+    🎟 DRAW MY SEASON
+    </button>
+
+
+    `;
+
 
 }
 
 
 
-// BUILD TEAM
+// TEAM RATING
+
+function calculateOverall(){
+
+    let total=0;
+    let count=0;
+
+
+    total += team.qb.overall;
+    total += team.rb.overall;
+    total += team.te.overall;
+    total += team.ol.overall;
+    total += team.defense.overall;
+
+
+    team.wr.forEach(w=>{
+
+        total += w.overall;
+
+    });
+
+
+    count = 9;
+
+
+    return Math.round(total/count);
+
+}
+
+
+
+// PLACEHOLDER SEASON DRAW
 
 function buildTeam(){
-
-    let seasons=[
-        "2011 Oklahoma State",
-        "2021 Oklahoma State",
-        "1988 Oklahoma State"
-    ];
-
-
-    let season=seasons[
-        Math.floor(Math.random()*seasons.length)
-    ];
-
 
     document.getElementById("result").innerHTML=`
 
     <h1>🎟 SEASON DRAW</h1>
 
-    <h2>${season} Schedule</h2>
+    <h2>2011 Oklahoma State Schedule</h2>
 
-    <p>Difficulty: ⭐⭐⭐⭐☆</p>
+    <p>
+    Difficulty: ⭐⭐⭐⭐⭐
+    </p>
 
-    <p>Average Opponent Rating: 87.5</p>
-
-    <button>
-    BEGIN SEASON
-    </button>
+    <p>
+    Average Opponent Rating: 89.4
+    </p>
 
     `;
 
