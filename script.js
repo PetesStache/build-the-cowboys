@@ -630,40 +630,6 @@ function buildTeam(){
 
 }
 
-
-
-    document.getElementById("result").innerHTML = `
-
-
-    <h1>🎟 SEASON DRAW</h1>
-
-    <h2>${season} Schedule</h2>
-
-
-    <p>
-    Difficulty:
-    ⭐⭐⭐⭐⭐
-    </p>
-
-
-    <p>
-    Average Opponent Rating:
-    89.4
-    </p>
-
-
-    <button>
-    BEGIN SEASON
-    </button>
-
-
-    `;
-
-
-}
-
-
-
 // START APP
 
 window.onload=function(){
