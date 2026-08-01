@@ -668,7 +668,7 @@ function startSeason(season){
         let advantage = teamOverall - game.difficulty;
 
 
-        let winChance = 50 + advantage;
+        let winChance = 50 + (advantage * 5);
 
 
 
