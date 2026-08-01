@@ -10,6 +10,7 @@ let team = {
 
 let quarterbacks = [];
 let runningbacks = [];
+let receivers = [];
 
 
 // LOAD DATABASES
@@ -19,14 +20,21 @@ async function loadPlayers(){
     const qbResponse = await fetch("data/quarterbacks.json");
     quarterbacks = await qbResponse.json();
 
+
     const rbResponse = await fetch("data/runningbacks.json");
     runningbacks = await rbResponse.json();
 
 
+    const wrResponse = await fetch("data/receivers.json");
+    receivers = await wrResponse.json();
+
+
     createQBcards();
     createRBcards();
+    createWRcards();
 
 }
+
 
 
 // CREATE QB CARDS
@@ -35,11 +43,13 @@ function createQBcards(){
 
     let div = document.getElementById("qb");
 
+
     quarterbacks.forEach(player => {
 
         let card = document.createElement("div");
 
         card.className = "player-card";
+
 
         card.innerHTML = `
 
@@ -111,7 +121,6 @@ function createRBcards(){
 
     runningbacks.forEach(player => {
 
-
         let card = document.createElement("div");
 
 
@@ -157,9 +166,7 @@ function createRBcards(){
         `;
 
 
-
         card.onclick = function(){
-
 
             document
             .querySelectorAll("#rb .player-card")
@@ -174,6 +181,108 @@ function createRBcards(){
 
             console.log(team);
 
+        };
+
+
+        div.appendChild(card);
+
+    });
+
+}
+
+
+
+// CREATE WR CARDS
+
+function createWRcards(){
+
+    let div = document.getElementById("wr");
+
+
+    receivers.forEach(player => {
+
+
+        let card = document.createElement("div");
+
+
+        card.className = "player-card";
+
+
+        card.innerHTML = `
+
+        <div class="rating">
+            ${player.overall}
+        </div>
+
+
+        <h3>${player.name}</h3>
+
+
+        <p>${player.years}</p>
+
+
+        <p>${player.tier}</p>
+
+
+        <div class="stat">
+            Hands
+            <b>${player.visible.hands}</b>
+        </div>
+
+
+        <div class="stat">
+            Speed
+            <b>${player.visible.speed}</b>
+        </div>
+
+
+        <div class="stat">
+            Route Running
+            <b>${player.visible.routeRunning}</b>
+        </div>
+
+
+        <div class="stat">
+            Playmaking
+            <b>${player.visible.playmaking}</b>
+        </div>
+
+
+        `;
+
+
+
+        card.onclick = function(){
+
+
+            if(team.wr.includes(player)){
+
+
+                team.wr = team.wr.filter(
+                    x => x !== player
+                );
+
+
+                card.classList.remove("selected");
+
+
+            }
+
+
+            else if(team.wr.length < 3){
+
+
+                team.wr.push(player);
+
+
+                card.classList.add("selected");
+
+
+            }
+
+
+            console.log(team);
+
 
         };
 
@@ -183,16 +292,13 @@ function createRBcards(){
 
     });
 
-
 }
 
 
 
-
-// BUILD TEAM BUTTON
+// BUILD TEAM
 
 function buildTeam(){
-
 
     let seasons = [
 
@@ -203,45 +309,38 @@ function buildTeam(){
     ];
 
 
-
     let season = seasons[
-        Math.floor(Math.random() * seasons.length)
+        Math.floor(Math.random()*seasons.length)
     ];
-
 
 
     document.getElementById("result").innerHTML = `
 
-
     <h1>🎟 SEASON DRAW</h1>
-
 
     <h2>${season} Schedule</h2>
 
-
     <p>Difficulty: ⭐⭐⭐⭐☆</p>
 
-
     <p>Average Opponent Rating: 87.5</p>
-
 
     <button>
         BEGIN SEASON
     </button>
 
-
     `;
 
 
-
     console.log(team);
-
 
 }
 
 
 
-
 // START APP
 
-loadPlayers();
+window.onload = function(){
+
+    loadPlayers();
+
+};
