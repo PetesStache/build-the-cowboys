@@ -1,4 +1,3 @@
-alert("SCRIPT IS WORKING");
 let team = {
     qb: null,
     rb: null,
@@ -212,6 +211,3 @@ function buildTeam(){
 
 
 // START APP
-
-loadPlayers();
-alert("NEW VERSION LOADED");
