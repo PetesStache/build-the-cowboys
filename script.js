@@ -1,3 +1,4 @@
+alert("SCRIPT IS WORKING");
 let team = {
     qb: null,
     rb: null,
