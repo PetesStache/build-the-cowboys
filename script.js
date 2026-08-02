@@ -351,12 +351,13 @@ function showFinalTeam(){
 
             <h3>QB</h3>
 
-            <p>
-            <strong>${team.qb.overall}</strong>
-            ${team.qb.name}
-            <br>
-            <small>${team.qb.years}</small>
-            </p>
+            <div class="rating">
+    ${team.qb.overall}
+</div>
+
+<h3>${team.qb.name}</h3>
+
+<p>${team.qb.years}</p>
 
         </div>
 
@@ -367,12 +368,13 @@ function showFinalTeam(){
 
             <h3>RB</h3>
 
-            <p>
-            <strong>${team.rb.overall}</strong>
-            ${team.rb.name}
-            <br>
-            <small>${team.rb.years}</small>
-            </p>
+            <div class="rating">
+    ${team.rb.overall}
+</div>
+
+<h3>${team.rb.name}</h3>
+
+<p>${team.rb.years}</p>
 
         </div>
 
