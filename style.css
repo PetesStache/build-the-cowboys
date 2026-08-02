@@ -15,12 +15,18 @@ body {
     margin:0;
 }
 
+
+/* ===========================
+   HEADER
+=========================== */
+
 .header {
     background:rgba(0,0,0,.65);
     backdrop-filter:blur(4px);
     padding:30px;
     border-bottom:4px solid #ff6600;
 }
+
 
 .header h1 {
     font-family:'Oswald', sans-serif;
@@ -31,9 +37,16 @@ body {
     margin:0;
 }
 
+
 .header p {
     font-size:18px;
 }
+
+
+
+/* ===========================
+   TITLES
+=========================== */
 
 h2 {
     color:#ff6600;
@@ -41,191 +54,372 @@ h2 {
     letter-spacing:1px;
 }
 
-.option {
-    display:inline-block;
-    background:#222;
-    border:2px solid #ff6600;
-    padding:15px;
-    margin:8px;
-    cursor:pointer;
-    border-radius:10px;
-}
 
-.option:hover {
-    background:#ff6600;
-}
 
-.selected {
-    background:#ff6600;
-}
+/* ===========================
+   BUTTONS
+=========================== */
 
 button {
+
     margin:30px;
     padding:15px 40px;
+
     font-size:20px;
     font-weight:bold;
+
     background:#ff6600;
     color:black;
+
     border:none;
     border-radius:10px;
+
     cursor:pointer;
+
     transition:.25s;
 }
 
+
 button:hover {
+
     background:#ff8533;
     transform:scale(1.04);
+
 }
+
+
+
+/* ===========================
+   PLAYER SELECTION CARDS
+=========================== */
 
 .player-card {
-    display:inline-block;
+
+    display:inline-flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
     width:220px;
+    height:220px;
+
     background:linear-gradient(#222,#111);
+
     border:3px solid #ff6600;
     border-radius:15px;
+
     margin:15px;
     padding:15px;
+
     cursor:pointer;
+
     transition:.3s;
+
     vertical-align:top;
+
     box-shadow:0 8px 20px rgba(0,0,0,.5);
-    height:220px;
+
     box-sizing:border-box;
+
 }
-}
+
 
 .player-card:hover {
+
     transform:scale(1.05);
+
 }
+
+
 
 .player-card.selected {
+
     background:#ff6600;
     color:black;
+
 }
+
+
 
 .rating {
+
     font-size:55px;
     font-weight:bold;
+
     color:#ff6600;
+
     margin-bottom:10px;
+
 }
+
+
 
 .player-card.selected .rating {
+
     color:black;
+
 }
+
+
 
 .player-card h3 {
-    margin:8px 0 5px;
+
+    margin:5px 0;
     font-size:22px;
+
 }
+
+
 
 .player-card p {
-    margin:0;
+
+    margin:5px 0;
     font-size:16px;
+
 }
+
+
+
+
+/* ===========================
+   OTHER ELEMENTS
+=========================== */
+
+
+.option {
+
+    display:inline-block;
+
+    background:#222;
+
+    border:2px solid #ff6600;
+
+    padding:15px;
+
+    margin:8px;
+
+    cursor:pointer;
+
+    border-radius:10px;
+
+}
+
+
+.option:hover {
+
+    background:#ff6600;
+
+}
+
+
+.selected {
+
+    background:#ff6600;
+
+}
+
+
 
 .stat {
+
     display:flex;
     justify-content:space-between;
+
     padding:5px;
+
 }
 
+
+
 .team-summary {
+
     text-align:center;
+
 }
+
+
 
 /* ===========================
    TEAM / SCHEDULE / RESULTS
 =========================== */
 
+
 .team-card {
+
     width:420px;
     max-width:90%;
+
     margin:20px auto;
+
     background:linear-gradient(#222,#111);
+
     border:3px solid #ff6600;
+
     border-radius:15px;
+
     overflow:hidden;
+
     box-shadow:0 8px 20px rgba(0,0,0,.5);
+
 }
+
+
 
 .team-card h1,
 .team-card h2,
 .team-card h3 {
+
     color:#ff6600;
+
     margin:20px 0 10px;
+
     text-align:center;
+
 }
+
+
 
 .team-card p {
+
     color:white;
+
 }
+
+
 
 .team-card strong {
+
     color:#ff6600;
+
 }
 
-.schedule-row {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:16px 20px;
-    border-top:2px solid rgba(255,102,0,.35);
-}
 
-.schedule-row:first-child {
-    border-top:none;
-}
 
-.schedule-left {
-    text-align:left;
-}
-
-.schedule-left strong {
-    display:block;
-    color:#ff6600;
-    font-size:18px;
-    margin-bottom:4px;
-}
-
-.schedule-right {
-    text-align:right;
-    font-size:20px;
-    font-weight:bold;
-    color:#ff6600;
-}
-
-/* Win/Loss colors */
-
-.win {
-    color:#46d369;
-}
-
-.loss {
-    color:#ff5c5c;
-}
 
 /* ===========================
-   OVERALL BOX
+   SCHEDULE ROWS
 =========================== */
 
-.overall-box {
-    margin:25px auto;
-    padding:20px;
-    max-width:300px;
-    border-radius:15px;
-    background:#ff6600;
-    color:black;
-    box-shadow:0 8px 20px rgba(0,0,0,.5);
+
+.schedule-row {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:16px 20px;
+
+    border-top:2px solid rgba(255,102,0,.35);
+
 }
+
+
+
+.schedule-row:first-child {
+
+    border-top:none;
+
+}
+
+
+
+.schedule-left {
+
+    text-align:left;
+
+}
+
+
+
+.schedule-left strong {
+
+    display:block;
+
+    color:#ff6600;
+
+    font-size:18px;
+
+    margin-bottom:4px;
+
+}
+
+
+
+.schedule-right {
+
+    text-align:right;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    color:#ff6600;
+
+}
+
+
+
+/* WIN LOSS */
+
+.win {
+
+    color:#46d369;
+
+}
+
+
+
+.loss {
+
+    color:#ff5c5c;
+
+}
+
+
+
+/* ===========================
+   TEAM OVERALL BOX
+=========================== */
+
+
+.overall-box {
+
+    margin:25px auto;
+
+    padding:20px;
+
+    max-width:300px;
+
+    border-radius:15px;
+
+    background:#ff6600;
+
+    color:black;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.5);
+
+}
+
+
 
 .overall-box h1 {
-    font-family:'Bebas Neue', sans-serif;
+
+    font-family:'Bebas Neue',sans-serif;
+
     letter-spacing:2px;
+
 }
 
+
+
 .overall-box h2 {
+
     color:black;
+
     font-size:75px;
-    font-family:'Bebas Neue', sans-serif;
+
+    font-family:'Bebas Neue',sans-serif;
+
 }
