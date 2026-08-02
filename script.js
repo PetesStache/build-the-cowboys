@@ -411,16 +411,13 @@ function showFinalTeam(){
 
             <h3>TE</h3>
 
-            <p>
+            <div class="rating">
+    ${team.te.overall}
+</div>
 
-            <strong>${team.te.overall}</strong>
-            ${team.te.name}
+<h3>${team.te.name}</h3>
 
-            <br>
-
-            <small>${team.te.years}</small>
-
-            </p>
+<p>${team.te.years}</p>
 
         </div>
 
@@ -431,12 +428,12 @@ function showFinalTeam(){
 
             <h3>OFFENSIVE LINE</h3>
 
-            <p>
+            <div class="rating">
+    ${team.ol.overall}
+</div>
 
-            <strong>${team.ol.overall}</strong>
-            ${team.ol.name}
+<h3>${team.ol.name}</h3>
 
-            </p>
 
         </div>
 
@@ -452,16 +449,12 @@ function showFinalTeam(){
 
             <h3>DEFENSE</h3>
 
-            <p>
+            <div class="rating">
+    ${team.defense.overall}
+</div>
 
-            <strong>${team.defense.overall}</strong>
-            ${team.defense.name}
+<h3>${team.defense.name}</h3>
 
-            <br>
-
-            <small>${team.defense.years}</small>
-
-            </p>
 
         </div>
 
