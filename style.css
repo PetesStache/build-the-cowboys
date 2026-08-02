@@ -15,6 +15,13 @@ body {
     margin:0;
 }
 
+.header {
+    background:rgba(0,0,0,.65);
+    backdrop-filter:blur(4px);
+    padding:30px;
+    border-bottom:4px solid #ff6600;
+}
+
 .header h1 {
     font-family:'Oswald', sans-serif;
     font-size:55px;
@@ -28,13 +35,11 @@ body {
     font-size:18px;
 }
 
-
 h2 {
     color:#ff6600;
     font-family:'Bebas Neue', sans-serif;
     letter-spacing:1px;
 }
-
 
 .option {
     display:inline-block;
@@ -46,16 +51,13 @@ h2 {
     border-radius:10px;
 }
 
-
 .option:hover {
     background:#ff6600;
 }
 
-
 .selected {
     background:#ff6600;
 }
-
 
 button {
     margin:30px;
@@ -67,14 +69,13 @@ button {
     border:none;
     border-radius:10px;
     cursor:pointer;
+    transition:.25s;
 }
-
 
 button:hover {
     background:#ff8533;
-    color:black;
+    transform:scale(1.04);
 }
-
 
 .player-card {
     display:inline-block;
@@ -88,19 +89,17 @@ button:hover {
     cursor:pointer;
     transition:.3s;
     vertical-align:top;
+    box-shadow:0 8px 20px rgba(0,0,0,.5);
 }
-
 
 .player-card:hover {
     transform:scale(1.05);
 }
 
-
 .player-card.selected {
     background:#ff6600;
     color:black;
 }
-
 
 .rating {
     font-size:55px;
@@ -109,23 +108,19 @@ button:hover {
     margin-bottom:10px;
 }
 
-
 .player-card.selected .rating {
     color:black;
 }
-
 
 .player-card h3 {
     margin:8px 0 5px;
     font-size:22px;
 }
 
-
 .player-card p {
     margin:0;
     font-size:16px;
 }
-
 
 .stat {
     display:flex;
@@ -133,46 +128,84 @@ button:hover {
     padding:5px;
 }
 
-
 .team-summary {
     text-align:center;
 }
 
+/* ===========================
+   TEAM / SCHEDULE / RESULTS
+=========================== */
 
 .team-card {
-    display:inline-block;
-    width:320px;
+    width:420px;
+    max-width:90%;
+    margin:20px auto;
     background:linear-gradient(#222,#111);
     border:3px solid #ff6600;
     border-radius:15px;
-    margin:15px;
-    padding:20px;
-    color:white;
+    overflow:hidden;
     box-shadow:0 8px 20px rgba(0,0,0,.5);
-    transition:.3s;
-}
-
-.team-card:hover{
-    transform:scale(1.02);
 }
 
 .team-card h1,
 .team-card h2,
-.team-card h3{
+.team-card h3 {
     color:#ff6600;
-    margin:10px 0;
+    margin:20px 0 10px;
+    text-align:center;
 }
 
-.team-card p{
+.team-card p {
     color:white;
-    line-height:1.5;
 }
 
-.team-card strong{
+.team-card strong {
     color:#ff6600;
-    font-size:24px;
 }
 
+.schedule-row {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:16px 20px;
+    border-top:2px solid rgba(255,102,0,.35);
+}
+
+.schedule-row:first-child {
+    border-top:none;
+}
+
+.schedule-left {
+    text-align:left;
+}
+
+.schedule-left strong {
+    display:block;
+    color:#ff6600;
+    font-size:18px;
+    margin-bottom:4px;
+}
+
+.schedule-right {
+    text-align:right;
+    font-size:20px;
+    font-weight:bold;
+    color:#ff6600;
+}
+
+/* Win/Loss colors */
+
+.win {
+    color:#46d369;
+}
+
+.loss {
+    color:#ff5c5c;
+}
+
+/* ===========================
+   OVERALL BOX
+=========================== */
 
 .overall-box {
     margin:25px auto;
@@ -181,14 +214,13 @@ button:hover {
     border-radius:15px;
     background:#ff6600;
     color:black;
+    box-shadow:0 8px 20px rgba(0,0,0,.5);
 }
-
 
 .overall-box h1 {
     font-family:'Bebas Neue', sans-serif;
     letter-spacing:2px;
 }
-
 
 .overall-box h2 {
     color:black;
