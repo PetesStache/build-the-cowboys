@@ -591,7 +591,7 @@ function buildTeam(){
     document.getElementById("result").innerHTML = `
 
 
-    <div class="team-card">
+    <div class="team-card wide-card">
 
 
         <h1>
@@ -835,7 +835,7 @@ function startSeason(season){
     document.getElementById("result").innerHTML = `
 
 
-    <div class="team-card">
+    <div class="team-card wide-card">
 
 
     <h1>
