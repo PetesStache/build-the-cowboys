@@ -347,7 +347,7 @@ function showFinalTeam(){
 
 
 
-        <div class="team-card">
+        <div class="player-card">
 
             <h3>QB</h3>
 
@@ -363,7 +363,7 @@ function showFinalTeam(){
 
 
 
-        <div class="team-card">
+        <div class="player-card">
 
             <h3>RB</h3>
 
@@ -379,7 +379,7 @@ function showFinalTeam(){
 
 
 
-        <div class="team-card">
+        <div class="player-card">
 
             <h3>WR</h3>
 
@@ -405,7 +405,7 @@ function showFinalTeam(){
 
 
 
-        <div class="team-card">
+        <div class="player-card">
 
             <h3>TE</h3>
 
@@ -425,7 +425,7 @@ function showFinalTeam(){
 
 
 
-        <div class="team-card">
+        <div class="player-card">
 
             <h3>OFFENSIVE LINE</h3>
 
@@ -446,7 +446,7 @@ function showFinalTeam(){
 
 
 
-        <div class="team-card">
+        <div class="player-card">
 
             <h3>DEFENSE</h3>
 
