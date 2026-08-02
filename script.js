@@ -529,9 +529,11 @@ total += team.defense.overall * 2 || 0;
 
 function buildTeam(){
 
-    currentSeason = databases.seasons[
-    Math.floor(Math.random() * databases.seasons.length)
-];
+    let season = databases.seasons[
+        Math.floor(Math.random() * databases.seasons.length)
+    ];
+
+    currentSeason = season;
 
 
     let scheduleHTML = "";
