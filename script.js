@@ -682,7 +682,7 @@ function startSeason(season){
 
         let winChance =
             50
-            + (ratingDifference * 2.25)
+            + (ratingDifference * 3.50)
             + (offensiveEdge * .75)
             + (defensiveEdge * .75);
 
