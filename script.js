@@ -535,6 +535,8 @@ function buildTeam(){
 
     currentSeason = season;
 
+    currentSeason = season;
+
 
     let scheduleHTML = "";
 
