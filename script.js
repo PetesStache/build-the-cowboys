@@ -20,6 +20,7 @@ let databases = {
 
 
 let currentStep = "qb";
+let currentSeason = null;
 
 
 
@@ -528,9 +529,9 @@ total += team.defense.overall * 2 || 0;
 
 function buildTeam(){
 
-    let season = databases.seasons[
-        Math.floor(Math.random() * databases.seasons.length)
-    ];
+    currentSeason = databases.seasons[
+    Math.floor(Math.random() * databases.seasons.length)
+];
 
 
     let scheduleHTML = "";
