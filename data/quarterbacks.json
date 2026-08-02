@@ -2,121 +2,96 @@
   {
     "name": "Brandon Weeden",
     "years": "2010-2011",
-    "overall": 96,
-    "tier": "Orange Legend",
-    "visible": {
-      "armTalent": 99,
-      "accuracy": 97,
-      "playmaking": 96,
-      "clutch": 97
-    }
+    "overall": 99
   },
   {
     "name": "Mason Rudolph",
-    "years": "2015-2017",
-    "overall": 95,
-    "tier": "Orange Legend",
-    "visible": {
-      "armTalent": 96,
-      "accuracy": 95,
-      "playmaking": 94,
-      "clutch": 94
-    }
-  },
-  {
-    "name": "Mike Gundy",
-    "years": "1986-1989",
-    "overall": 92,
-    "tier": "Orange Legend",
-    "visible": {
-      "armTalent": 91,
-      "accuracy": 90,
-      "playmaking": 89,
-      "clutch": 95
-    }
+    "years": "2014-2017",
+    "overall": 98
   },
   {
     "name": "Zac Robinson",
     "years": "2006-2009",
-    "overall": 90,
-    "tier": "Orange Legend",
-    "visible": {
-      "armTalent": 91,
-      "accuracy": 91,
-      "playmaking": 90,
-      "clutch": 89
-    }
-  },
-  {
-    "name": "Spencer Sanders",
-    "years": "2019-2022",
-    "overall": 89,
-    "tier": "Orange Legend",
-    "visible": {
-      "armTalent": 90,
-      "accuracy": 84,
-      "playmaking": 97,
-      "clutch": 88
-    }
-  },
-  {
-    "name": "J.W. Walsh",
-    "years": "2012-2015",
-    "overall": 88,
-    "tier": "Orange Legend",
-    "visible": {
-      "armTalent": 86,
-      "accuracy": 85,
-      "playmaking": 96,
-      "clutch": 92
-    }
+    "overall": 94
   },
   {
     "name": "Josh Fields",
     "years": "2001-2004",
-    "overall": 87,
-    "tier": "Black Legend",
-    "visible": {
-      "armTalent": 90,
-      "accuracy": 86,
-      "playmaking": 87,
-      "clutch": 90
-    }
+    "overall": 92
+  },
+  {
+    "name": "Spencer Sanders",
+    "years": "2019-2022",
+    "overall": 90
+  },
+  {
+    "name": "Mike Gundy",
+    "years": "1986-1989",
+    "overall": 89
   },
   {
     "name": "Clint Chelf",
     "years": "2010-2013",
-    "overall": 86,
-    "tier": "Black Legend",
-    "visible": {
-      "armTalent": 84,
-      "accuracy": 84,
-      "playmaking": 90,
-      "clutch": 93
-    }
+    "overall": 82
+  },
+  {
+    "name": "Taylor Cornelius",
+    "years": "2018",
+    "overall": 82
+  },
+  {
+    "name": "JW Walsh",
+    "years": "2012-2015",
+    "overall": 81
+  },
+  {
+    "name": "Bobby Reid",
+    "years": "2005-2007",
+    "overall": 79
+  },
+  {
+    "name": "Donovan Woods",
+    "years": "2004-2007",
+    "overall": 77
+  },
+  {
+    "name": "Rusty Hilger",
+    "years": "1982-1984",
+    "overall": 77
+  },
+  {
+    "name": "Tony Lindsay",
+    "years": "1998-2001",
+    "overall": 75
+  },
+  {
+    "name": "Alan Bowman",
+    "years": "2023-2024",
+    "overall": 74
+  },
+  {
+    "name": "Al Pena",
+    "years": "1990-1993",
+    "overall": 73
+  },
+  {
+    "name": "Daxx Garman",
+    "years": "2014",
+    "overall": 71
+  },
+  {
+    "name": "Tone Jones",
+    "years": "1994-1997",
+    "overall": 69
   },
   {
     "name": "Aso Pogi",
-    "years": "1998-2001",
-    "overall": 84,
-    "tier": "Cowboy",
-    "visible": {
-      "armTalent": 84,
-      "accuracy": 84,
-      "playmaking": 82,
-      "clutch": 85
-    }
+    "years": "1997-1999",
+    "overall": 66
   },
   {
-    "name": "Wes Lunt",
-    "years": "2012",
-    "overall": 83,
-    "tier": "Cowboy",
-    "visible": {
-      "armTalent": 87,
-      "accuracy": 84,
-      "playmaking": 83,
-      "clutch": 82
-    }
+    "name": "Zane Flores",
+    "years": "2024-present",
+    "overall": 60
   }
 ]
