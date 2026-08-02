@@ -1,19 +1,565 @@
 [
   {
-    "season": "2011 Oklahoma State Cowboys",
-    "coach": "Mike Gundy",
-    "record": "12-1",
+    "season": "2000 Oklahoma State",
+    "coach": "Bob Simmons",
+    "record": "3-8",
     "conference": "Big 12",
-    "difficulty": 5,
-    "averageOpponentRating": 89,
+    "difficulty": 7,
+    "averageOpponentRating": 83,
     "games": [
       {
-        "opponent": "Louisiana",
+        "opponent": "Tulsa",
+        "difficulty": 74
+      },
+      {
+        "opponent": "Louisiana Tech",
+        "difficulty": 72
+      },
+      {
+        "opponent": "Southern Mississippi",
+        "difficulty": 82
+      },
+      {
+        "opponent": "Kansas State",
+        "difficulty": 91
+      },
+      {
+        "opponent": "Texas",
+        "difficulty": 94
+      },
+      {
+        "opponent": "Iowa State",
         "difficulty": 78
       },
       {
-        "opponent": "Arizona",
+        "opponent": "Missouri",
+        "difficulty": 82
+      },
+      {
+        "opponent": "Nebraska",
+        "difficulty": 97
+      },
+      {
+        "opponent": "Texas A&M",
+        "difficulty": 88
+      },
+      {
+        "opponent": "Baylor",
+        "difficulty": 68
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 96
+      }
+    ]
+  },
+  {
+    "season": "2001 Oklahoma State",
+    "coach": "Les Miles",
+    "record": "4-7",
+    "conference": "Big 12",
+    "difficulty": 8,
+    "averageOpponentRating": 84,
+    "games": [
+      {
+        "opponent": "Tulsa",
+        "difficulty": 72
+      },
+      {
+        "opponent": "SMU",
+        "difficulty": 70
+      },
+      {
+        "opponent": "Arkansas State",
+        "difficulty": 65
+      },
+      {
+        "opponent": "Nebraska",
+        "difficulty": 96
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 76
+      },
+      {
+        "opponent": "Kansas State",
+        "difficulty": 92
+      },
+      {
+        "opponent": "Missouri",
+        "difficulty": 80
+      },
+      {
+        "opponent": "Texas A&M",
+        "difficulty": 86
+      },
+      {
+        "opponent": "Texas Tech",
         "difficulty": 84
+      },
+      {
+        "opponent": "Texas",
+        "difficulty": 95
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 97
+      }
+    ]
+  },
+  {
+    "season": "2002 Oklahoma State",
+    "coach": "Les Miles",
+    "record": "8-5",
+    "conference": "Big 12",
+    "difficulty": 8,
+    "averageOpponentRating": 82,
+    "games": [
+      {
+        "opponent": "Boise State",
+        "difficulty": 84
+      },
+      {
+        "opponent": "SMU",
+        "difficulty": 70
+      },
+      {
+        "opponent": "Arkansas State",
+        "difficulty": 65
+      },
+      {
+        "opponent": "Texas Tech",
+        "difficulty": 84
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 74
+      },
+      {
+        "opponent": "Texas A&M",
+        "difficulty": 86
+      },
+      {
+        "opponent": "Missouri",
+        "difficulty": 82
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 78
+      },
+      {
+        "opponent": "Nebraska",
+        "difficulty": 95
+      },
+      {
+        "opponent": "Baylor",
+        "difficulty": 65
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 96
+      }
+    ]
+  }
+]
+[
+  {
+    "season": "2003 Oklahoma State",
+    "coach": "Les Miles",
+    "record": "9-4",
+    "conference": "Big 12",
+    "difficulty": 8,
+    "averageOpponentRating": 84,
+    "games": [
+      {
+        "opponent": "Nebraska",
+        "difficulty": 94
+      },
+      {
+        "opponent": "Wyoming",
+        "difficulty": 70
+      },
+      {
+        "opponent": "SMU",
+        "difficulty": 72
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 82
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 75
+      },
+      {
+        "opponent": "Texas A&M",
+        "difficulty": 86
+      },
+      {
+        "opponent": "Missouri",
+        "difficulty": 84
+      },
+      {
+        "opponent": "Texas Tech",
+        "difficulty": 87
+      },
+      {
+        "opponent": "Baylor",
+        "difficulty": 68
+      },
+      {
+        "opponent": "Texas",
+        "difficulty": 95
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 98
+      }
+    ]
+  },
+  {
+    "season": "2004 Oklahoma State",
+    "coach": "Les Miles",
+    "record": "7-5",
+    "conference": "Big 12",
+    "difficulty": 7,
+    "averageOpponentRating": 82,
+    "games": [
+      {
+        "opponent": "Tulsa",
+        "difficulty": 72
+      },
+      {
+        "opponent": "Houston",
+        "difficulty": 75
+      },
+      {
+        "opponent": "SMU",
+        "difficulty": 70
+      },
+      {
+        "opponent": "Texas",
+        "difficulty": 95
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 76
+      },
+      {
+        "opponent": "Missouri",
+        "difficulty": 83
+      },
+      {
+        "opponent": "Nebraska",
+        "difficulty": 88
+      },
+      {
+        "opponent": "Texas A&M",
+        "difficulty": 85
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 80
+      },
+      {
+        "opponent": "Texas Tech",
+        "difficulty": 88
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 97
+      }
+    ]
+  },
+  {
+    "season": "2005 Oklahoma State",
+    "coach": "Mike Gundy",
+    "record": "4-7",
+    "conference": "Big 12",
+    "difficulty": 8,
+    "averageOpponentRating": 83,
+    "games": [
+      {
+        "opponent": "Montana State",
+        "difficulty": 60
+      },
+      {
+        "opponent": "Tulsa",
+        "difficulty": 73
+      },
+      {
+        "opponent": "Colorado",
+        "difficulty": 88
+      },
+      {
+        "opponent": "Texas A&M",
+        "difficulty": 84
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 80
+      },
+      {
+        "opponent": "Kansas State",
+        "difficulty": 86
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 74
+      },
+      {
+        "opponent": "Texas Tech",
+        "difficulty": 90
+      },
+      {
+        "opponent": "Baylor",
+        "difficulty": 70
+      },
+      {
+        "opponent": "Texas",
+        "difficulty": 97
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 96
+      }
+    ]
+  }
+]
+[
+  {
+    "season": "2006 Oklahoma State",
+    "coach": "Mike Gundy",
+    "record": "7-6",
+    "conference": "Big 12",
+    "difficulty": 7,
+    "averageOpponentRating": 81,
+    "games": [
+      {
+        "opponent": "Missouri State",
+        "difficulty": 62
+      },
+      {
+        "opponent": "Arkansas",
+        "difficulty": 86
+      },
+      {
+        "opponent": "Houston",
+        "difficulty": 76
+      },
+      {
+        "opponent": "Texas Tech",
+        "difficulty": 88
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 75
+      },
+      {
+        "opponent": "Kansas State",
+        "difficulty": 85
+      },
+      {
+        "opponent": "Nebraska",
+        "difficulty": 91
+      },
+      {
+        "opponent": "Baylor",
+        "difficulty": 70
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 78
+      },
+      {
+        "opponent": "Texas",
+        "difficulty": 96
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 97
+      }
+    ]
+  },
+  {
+    "season": "2007 Oklahoma State",
+    "coach": "Mike Gundy",
+    "record": "7-6",
+    "conference": "Big 12",
+    "difficulty": 8,
+    "averageOpponentRating": 83,
+    "games": [
+      {
+        "opponent": "Georgia",
+        "difficulty": 92
+      },
+      {
+        "opponent": "Florida Atlantic",
+        "difficulty": 68
+      },
+      {
+        "opponent": "Texas Tech",
+        "difficulty": 87
+      },
+      {
+        "opponent": "Sam Houston State",
+        "difficulty": 60
+      },
+      {
+        "opponent": "Texas A&M",
+        "difficulty": 83
+      },
+      {
+        "opponent": "Nebraska",
+        "difficulty": 90
+      },
+      {
+        "opponent": "Kansas State",
+        "difficulty": 86
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 88
+      },
+      {
+        "opponent": "Baylor",
+        "difficulty": 68
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 75
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 98
+      }
+    ]
+  },
+  {
+    "season": "2008 Oklahoma State",
+    "coach": "Mike Gundy",
+    "record": "9-4",
+    "conference": "Big 12",
+    "difficulty": 9,
+    "averageOpponentRating": 86,
+    "games": [
+      {
+        "opponent": "Washington State",
+        "difficulty": 74
+      },
+      {
+        "opponent": "Houston",
+        "difficulty": 82
+      },
+      {
+        "opponent": "Troy",
+        "difficulty": 76
+      },
+      {
+        "opponent": "Texas A&M",
+        "difficulty": 78
+      },
+      {
+        "opponent": "Texas Tech",
+        "difficulty": 92
+      },
+      {
+        "opponent": "Missouri",
+        "difficulty": 89
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 74
+      },
+      {
+        "opponent": "Baylor",
+        "difficulty": 72
+      },
+      {
+        "opponent": "Kansas State",
+        "difficulty": 82
+      },
+      {
+        "opponent": "Colorado",
+        "difficulty": 80
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 99
+      }
+    ]
+  }
+]
+[
+  {
+    "season": "2009 Oklahoma State",
+    "coach": "Mike Gundy",
+    "record": "9-4",
+    "conference": "Big 12",
+    "difficulty": 9,
+    "averageOpponentRating": 86,
+    "games": [
+      {
+        "opponent": "Georgia",
+        "difficulty": 91
+      },
+      {
+        "opponent": "Houston",
+        "difficulty": 84
+      },
+      {
+        "opponent": "Rice",
+        "difficulty": 70
+      },
+      {
+        "opponent": "Texas A&M",
+        "difficulty": 82
+      },
+      {
+        "opponent": "Missouri",
+        "difficulty": 87
+      },
+      {
+        "opponent": "Baylor",
+        "difficulty": 73
+      },
+      {
+        "opponent": "Texas",
+        "difficulty": 98
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 78
+      },
+      {
+        "opponent": "Texas Tech",
+        "difficulty": 91
+      },
+      {
+        "opponent": "Colorado",
+        "difficulty": 79
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 97
+      }
+    ]
+  },
+  {
+    "season": "2010 Oklahoma State",
+    "coach": "Mike Gundy",
+    "record": "11-2",
+    "conference": "Big 12",
+    "difficulty": 9,
+    "averageOpponentRating": 87,
+    "games": [
+      {
+        "opponent": "Washington State",
+        "difficulty": 72
+      },
+      {
+        "opponent": "Troy",
+        "difficulty": 75
       },
       {
         "opponent": "Tulsa",
@@ -21,15 +567,69 @@
       },
       {
         "opponent": "Texas A&M",
-        "difficulty": 92
+        "difficulty": 86
+      },
+      {
+        "opponent": "Texas Tech",
+        "difficulty": 88
       },
       {
         "opponent": "Kansas",
-        "difficulty": 75
+        "difficulty": 70
+      },
+      {
+        "opponent": "Nebraska",
+        "difficulty": 95
+      },
+      {
+        "opponent": "Baylor",
+        "difficulty": 76
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 77
+      },
+      {
+        "opponent": "Kansas State",
+        "difficulty": 82
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 97
+      }
+    ]
+  },
+  {
+    "season": "2011 Oklahoma State",
+    "coach": "Mike Gundy",
+    "record": "12-1",
+    "conference": "Big 12",
+    "difficulty": 10,
+    "averageOpponentRating": 88,
+    "games": [
+      {
+        "opponent": "Louisiana-Lafayette",
+        "difficulty": 73
+      },
+      {
+        "opponent": "Arizona",
+        "difficulty": 82
+      },
+      {
+        "opponent": "Tulsa",
+        "difficulty": 78
+      },
+      {
+        "opponent": "Texas A&M",
+        "difficulty": 88
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 68
       },
       {
         "opponent": "Missouri",
-        "difficulty": 86
+        "difficulty": 85
       },
       {
         "opponent": "Baylor",
@@ -37,69 +637,63 @@
       },
       {
         "opponent": "Kansas State",
-        "difficulty": 90
+        "difficulty": 89
       },
       {
         "opponent": "Texas Tech",
-        "difficulty": 88
+        "difficulty": 86
       },
       {
         "opponent": "Iowa State",
-        "difficulty": 82
+        "difficulty": 78
       },
       {
         "opponent": "Oklahoma",
         "difficulty": 96
-      },
-      {
-        "opponent": "Big 12 Championship",
-        "difficulty": 94
-      },
-      {
-        "opponent": "Fiesta Bowl",
-        "difficulty": 95
       }
     ]
-  },
+  }
+]
+[
   {
-    "season": "2021 Oklahoma State Cowboys",
+    "season": "2012 Oklahoma State",
     "coach": "Mike Gundy",
-    "record": "12-2",
+    "record": "8-5",
     "conference": "Big 12",
-    "difficulty": 5,
-    "averageOpponentRating": 89,
+    "difficulty": 8,
+    "averageOpponentRating": 84,
     "games": [
       {
-        "opponent": "Missouri State",
-        "difficulty": 75
+        "opponent": "Savannah State",
+        "difficulty": 55
       },
       {
-        "opponent": "Tulsa",
+        "opponent": "Arizona",
         "difficulty": 82
       },
       {
-        "opponent": "Boise State",
-        "difficulty": 86
+        "opponent": "Louisiana-Lafayette",
+        "difficulty": 75
       },
       {
-        "opponent": "Kansas State",
-        "difficulty": 90
-      },
-      {
-        "opponent": "Texas",
+        "opponent": "Texas A&M",
         "difficulty": 92
       },
       {
-        "opponent": "Iowa State",
-        "difficulty": 89
+        "opponent": "Kansas",
+        "difficulty": 65
       },
       {
-        "opponent": "Kansas",
-        "difficulty": 76
+        "opponent": "Iowa State",
+        "difficulty": 78
+      },
+      {
+        "opponent": "Kansas State",
+        "difficulty": 95
       },
       {
         "opponent": "West Virginia",
-        "difficulty": 85
+        "difficulty": 91
       },
       {
         "opponent": "Texas Tech",
@@ -107,73 +701,725 @@
       },
       {
         "opponent": "Oklahoma",
-        "difficulty": 95
-      },
-      {
-        "opponent": "Bedlam Rematch",
         "difficulty": 96
       },
       {
-        "opponent": "Big 12 Championship",
-        "difficulty": 93
-      },
-      {
-        "opponent": "Fiesta Bowl",
-        "difficulty": 94
+        "opponent": "Baylor",
+        "difficulty": 84
       }
     ]
   },
   {
-    "season": "1988 Oklahoma State Cowboys",
-    "coach": "Pat Jones",
-    "record": "10-2",
-    "conference": "Big 8",
-    "difficulty": 4,
+    "season": "2013 Oklahoma State",
+    "coach": "Mike Gundy",
+    "record": "10-3",
+    "conference": "Big 12",
+    "difficulty": 9,
+    "averageOpponentRating": 86,
+    "games": [
+      {
+        "opponent": "Mississippi State",
+        "difficulty": 86
+      },
+      {
+        "opponent": "UTSA",
+        "difficulty": 65
+      },
+      {
+        "opponent": "Lamar",
+        "difficulty": 60
+      },
+      {
+        "opponent": "West Virginia",
+        "difficulty": 83
+      },
+      {
+        "opponent": "Kansas State",
+        "difficulty": 88
+      },
+      {
+        "opponent": "TCU",
+        "difficulty": 87
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 74
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 68
+      },
+      {
+        "opponent": "Texas Tech",
+        "difficulty": 82
+      },
+      {
+        "opponent": "Baylor",
+        "difficulty": 94
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 95
+      }
+    ]
+  },
+  {
+    "season": "2014 Oklahoma State",
+    "coach": "Mike Gundy",
+    "record": "7-6",
+    "conference": "Big 12",
+    "difficulty": 8,
+    "averageOpponentRating": 84,
+    "games": [
+      {
+        "opponent": "Florida State",
+        "difficulty": 97
+      },
+      {
+        "opponent": "Missouri State",
+        "difficulty": 60
+      },
+      {
+        "opponent": "UTSA",
+        "difficulty": 65
+      },
+      {
+        "opponent": "Texas Tech",
+        "difficulty": 82
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 72
+      },
+      {
+        "opponent": "TCU",
+        "difficulty": 94
+      },
+      {
+        "opponent": "West Virginia",
+        "difficulty": 86
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 65
+      },
+      {
+        "opponent": "Kansas State",
+        "difficulty": 88
+      },
+      {
+        "opponent": "Baylor",
+        "difficulty": 92
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 95
+      }
+    ]
+  }
+]
+[
+  {
+    "season": "2015 Oklahoma State",
+    "coach": "Mike Gundy",
+    "record": "10-3",
+    "conference": "Big 12",
+    "difficulty": 9,
     "averageOpponentRating": 87,
     "games": [
+      {
+        "opponent": "Central Michigan",
+        "difficulty": 76
+      },
+      {
+        "opponent": "Central Arkansas",
+        "difficulty": 60
+      },
+      {
+        "opponent": "UTSA",
+        "difficulty": 65
+      },
+      {
+        "opponent": "Texas",
+        "difficulty": 84
+      },
+      {
+        "opponent": "Kansas State",
+        "difficulty": 86
+      },
+      {
+        "opponent": "West Virginia",
+        "difficulty": 88
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 65
+      },
+      {
+        "opponent": "Texas Tech",
+        "difficulty": 87
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 74
+      },
+      {
+        "opponent": "Baylor",
+        "difficulty": 91
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 96
+      }
+    ]
+  },
+  {
+    "season": "2016 Oklahoma State",
+    "coach": "Mike Gundy",
+    "record": "10-3",
+    "conference": "Big 12",
+    "difficulty": 9,
+    "averageOpponentRating": 85,
+    "games": [
+      {
+        "opponent": "Southeastern Louisiana",
+        "difficulty": 60
+      },
+      {
+        "opponent": "Central Michigan",
+        "difficulty": 75
+      },
+      {
+        "opponent": "Pittsburgh",
+        "difficulty": 84
+      },
+      {
+        "opponent": "Baylor",
+        "difficulty": 88
+      },
+      {
+        "opponent": "Texas",
+        "difficulty": 86
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 73
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 65
+      },
+      {
+        "opponent": "West Virginia",
+        "difficulty": 90
+      },
+      {
+        "opponent": "Kansas State",
+        "difficulty": 84
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 96
+      },
+      {
+        "opponent": "Oklahoma Sooners",
+        "difficulty": 96
+      }
+    ]
+  },
+  {
+    "season": "2017 Oklahoma State",
+    "coach": "Mike Gundy",
+    "record": "10-3",
+    "conference": "Big 12",
+    "difficulty": 8,
+    "averageOpponentRating": 84,
+    "games": [
+      {
+        "opponent": "Tulsa",
+        "difficulty": 74
+      },
+      {
+        "opponent": "South Alabama",
+        "difficulty": 65
+      },
+      {
+        "opponent": "Pittsburgh",
+        "difficulty": 82
+      },
+      {
+        "opponent": "TCU",
+        "difficulty": 90
+      },
+      {
+        "opponent": "Texas Tech",
+        "difficulty": 84
+      },
+      {
+        "opponent": "Texas",
+        "difficulty": 86
+      },
+      {
+        "opponent": "West Virginia",
+        "difficulty": 88
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 65
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 78
+      },
+      {
+        "opponent": "Kansas State",
+        "difficulty": 83
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 97
+      }
+    ]
+  }
+]
+[
+  {
+    "season": "2018 Oklahoma State",
+    "coach": "Mike Gundy",
+    "record": "7-6",
+    "conference": "Big 12",
+    "difficulty": 8,
+    "averageOpponentRating": 84,
+    "games": [
+      {
+        "opponent": "Missouri State",
+        "difficulty": 60
+      },
+      {
+        "opponent": "South Alabama",
+        "difficulty": 65
+      },
+      {
+        "opponent": "Boise State",
+        "difficulty": 85
+      },
+      {
+        "opponent": "Texas Tech",
+        "difficulty": 84
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 65
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 86
+      },
+      {
+        "opponent": "Kansas State",
+        "difficulty": 82
+      },
+      {
+        "opponent": "Texas",
+        "difficulty": 90
+      },
+      {
+        "opponent": "Baylor",
+        "difficulty": 75
+      },
+      {
+        "opponent": "West Virginia",
+        "difficulty": 88
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 97
+      }
+    ]
+  },
+  {
+    "season": "2019 Oklahoma State",
+    "coach": "Mike Gundy",
+    "record": "8-5",
+    "conference": "Big 12",
+    "difficulty": 8,
+    "averageOpponentRating": 84,
+    "games": [
+      {
+        "opponent": "Oregon State",
+        "difficulty": 76
+      },
+      {
+        "opponent": "McNeese",
+        "difficulty": 60
+      },
+      {
+        "opponent": "Tulsa",
+        "difficulty": 72
+      },
+      {
+        "opponent": "Texas Tech",
+        "difficulty": 83
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 65
+      },
+      {
+        "opponent": "Baylor",
+        "difficulty": 88
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 84
+      },
+      {
+        "opponent": "TCU",
+        "difficulty": 84
+      },
+      {
+        "opponent": "Kansas State",
+        "difficulty": 87
+      },
+      {
+        "opponent": "West Virginia",
+        "difficulty": 82
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 96
+      }
+    ]
+  },
+  {
+    "season": "2020 Oklahoma State",
+    "coach": "Mike Gundy",
+    "record": "8-3",
+    "conference": "Big 12",
+    "difficulty": 8,
+    "averageOpponentRating": 86,
+    "games": [
+      {
+        "opponent": "Tulsa",
+        "difficulty": 80
+      },
+      {
+        "opponent": "West Virginia",
+        "difficulty": 86
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 65
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 91
+      },
+      {
+        "opponent": "Texas Tech",
+        "difficulty": 78
+      },
+      {
+        "opponent": "TCU",
+        "difficulty": 84
+      },
+      {
+        "opponent": "Texas",
+        "difficulty": 91
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 96
+      },
+      {
+        "opponent": "Baylor",
+        "difficulty": 75
+      },
+      {
+        "opponent": "Miami",
+        "difficulty": 82
+      }
+    ]
+  }
+]
+[
+  {
+[
+  {
+    "season": "2021 Oklahoma State",
+    "coach": "Mike Gundy",
+    "record": "12-2",
+    "conference": "Big 12",
+    "difficulty": 10,
+    "averageOpponentRating": 88,
+    "games": [
+      {
+        "opponent": "Missouri State",
+        "difficulty": 60
+      },
       {
         "opponent": "Tulsa",
         "difficulty": 78
       },
       {
-        "opponent": "Arkansas",
-        "difficulty": 88
-      },
-      {
-        "opponent": "Iowa State",
-        "difficulty": 80
-      },
-      {
-        "opponent": "Kansas",
+        "opponent": "Boise State",
         "difficulty": 82
       },
       {
         "opponent": "Kansas State",
-        "difficulty": 81
-      },
-      {
-        "opponent": "Missouri",
         "difficulty": 86
       },
       {
-        "opponent": "Nebraska",
-        "difficulty": 97
+        "opponent": "Baylor",
+        "difficulty": 91
       },
       {
-        "opponent": "Colorado",
-        "difficulty": 92
+        "opponent": "Texas",
+        "difficulty": 87
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 90
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 65
+      },
+      {
+        "opponent": "West Virginia",
+        "difficulty": 82
       },
       {
         "opponent": "Oklahoma",
-        "difficulty": 99
+        "difficulty": 96
       },
       {
-        "opponent": "Big 8 Championship",
+        "opponent": "Oklahoma (Big 12 Championship)",
+        "difficulty": 96
+      },
+      {
+        "opponent": "Notre Dame (Fiesta Bowl)",
+        "difficulty": 94
+      }
+    ]
+  },
+  {
+    "season": "2022 Oklahoma State",
+    "coach": "Mike Gundy",
+    "record": "7-6",
+    "conference": "Big 12",
+    "difficulty": 8,
+    "averageOpponentRating": 85,
+    "games": [
+      {
+        "opponent": "Central Michigan",
+        "difficulty": 75
+      },
+      {
+        "opponent": "Arizona State",
+        "difficulty": 78
+      },
+      {
+        "opponent": "Arkansas-Pine Bluff",
+        "difficulty": 60
+      },
+      {
+        "opponent": "Texas",
+        "difficulty": 89
+      },
+      {
+        "opponent": "Texas Tech",
+        "difficulty": 84
+      },
+      {
+        "opponent": "TCU",
+        "difficulty": 92
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 72
+      },
+      {
+        "opponent": "Kansas State",
+        "difficulty": 88
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 84
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 92
+      },
+      {
+        "opponent": "West Virginia",
+        "difficulty": 80
+      }
+    ]
+  },
+  {
+    "season": "2023 Oklahoma State",
+    "coach": "Mike Gundy",
+    "record": "10-4",
+    "conference": "Big 12",
+    "difficulty": 9,
+    "averageOpponentRating": 86,
+    "games": [
+      {
+        "opponent": "Central Arkansas",
+        "difficulty": 60
+      },
+      {
+        "opponent": "Arizona State",
+        "difficulty": 78
+      },
+      {
+        "opponent": "South Alabama",
+        "difficulty": 76
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 85
+      },
+      {
+        "opponent": "Kansas State",
+        "difficulty": 89
+      },
+      {
+        "opponent": "West Virginia",
+        "difficulty": 83
+      },
+      {
+        "opponent": "Cincinnati",
+        "difficulty": 80
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 94
+      },
+      {
+        "opponent": "Houston",
+        "difficulty": 75
+      },
+      {
+        "opponent": "BYU",
+        "difficulty": 82
+      },
+      {
+        "opponent": "Texas",
+        "difficulty": 92
+      }
+    ]
+  },
+  {
+    "season": "2024 Oklahoma State",
+    "coach": "Mike Gundy",
+    "record": "3-9",
+    "conference": "Big 12",
+    "difficulty": 8,
+    "averageOpponentRating": 85,
+    "games": [
+      {
+        "opponent": "South Dakota State",
+        "difficulty": 85
+      },
+      {
+        "opponent": "Arkansas",
+        "difficulty": 84
+      },
+      {
+        "opponent": "Tulsa",
+        "difficulty": 72
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 78
+      },
+      {
+        "opponent": "West Virginia",
+        "difficulty": 82
+      },
+      {
+        "opponent": "BYU",
+        "difficulty": 86
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 90
+      },
+      {
+        "opponent": "Baylor",
+        "difficulty": 82
+      },
+      {
+        "opponent": "TCU",
+        "difficulty": 84
+      },
+      {
+        "opponent": "Texas Tech",
+        "difficulty": 85
+      },
+      {
+        "opponent": "Colorado",
+        "difficulty": 90
+      }
+    ]
+  },
+  {
+    "season": "2025 Oklahoma State",
+    "coach": "Eric Morris",
+    "record": "TBD",
+    "conference": "Big 12",
+    "difficulty": 8,
+    "averageOpponentRating": 84,
+    "games": [
+      {
+        "opponent": "Oregon",
         "difficulty": 93
       },
       {
-        "opponent": "Holiday Bowl",
-        "difficulty": 90
+        "opponent": "UT Martin",
+        "difficulty": 65
+      },
+      {
+        "opponent": "Tulsa",
+        "difficulty": 72
+      },
+      {
+        "opponent": "Kansas",
+        "difficulty": 78
+      },
+      {
+        "opponent": "Texas Tech",
+        "difficulty": 87
+      },
+      {
+        "opponent": "Arizona State",
+        "difficulty": 80
+      },
+      {
+        "opponent": "Iowa State",
+        "difficulty": 88
+      },
+      {
+        "opponent": "TCU",
+        "difficulty": 84
+      },
+      {
+        "opponent": "Houston",
+        "difficulty": 74
+      },
+      {
+        "opponent": "UCF",
+        "difficulty": 80
+      },
+      {
+        "opponent": "BYU",
+        "difficulty": 86
+      },
+      {
+        "opponent": "Oklahoma",
+        "difficulty": 95
       }
     ]
   }
