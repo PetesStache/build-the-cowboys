@@ -3,30 +3,46 @@ body {
     color:white;
     font-family:Arial, sans-serif;
     text-align:center;
+    margin:0;
 }
-
 
 .header {
     background:#ff6600;
     padding:30px;
 }
 
-
 h2 {
     color:#ff6600;
 }
 
+.option {
+    display:inline-block;
+    background:#222;
+    border:2px solid #ff6600;
+    padding:15px;
+    margin:8px;
+    cursor:pointer;
+    border-radius:10px;
+}
+
+.option:hover {
+    background:#ff6600;
+}
+
+.selected {
+    background:#ff6600;
+}
 
 button {
     margin:30px;
     padding:15px 40px;
     font-size:20px;
+    font-weight:bold;
     background:#ff6600;
     color:black;
     border:none;
-    cursor:pointer;
     border-radius:10px;
-    font-weight:bold;
+    cursor:pointer;
 }
 
 button:hover {
@@ -34,204 +50,79 @@ button:hover {
     color:black;
 }
 
-
-
-/* PLAYER SELECTION CARDS */
-
 .player-card {
-
     display:inline-block;
-
     width:220px;
-
-    min-height:250px;
-
+    min-height:190px;
     background:linear-gradient(#222,#111);
-
     border:3px solid #ff6600;
-
     border-radius:15px;
-
     margin:15px;
-
     padding:15px;
-
     cursor:pointer;
-
     transition:.3s;
-
+    vertical-align:top;
 }
-
 
 .player-card:hover {
-
     transform:scale(1.05);
-
 }
-
 
 .player-card.selected {
-
     background:#ff6600;
-
     color:black;
-
 }
-
 
 .rating {
-
     font-size:55px;
-
     font-weight:bold;
-
     color:#ff6600;
-
+    margin-bottom:10px;
 }
-
 
 .player-card.selected .rating {
-
     color:black;
-
 }
 
+.player-card h3 {
+    margin:8px 0 5px;
+    font-size:22px;
+}
+
+.player-card p {
+    margin:0;
+    font-size:16px;
+}
 
 .stat {
-
     display:flex;
-
     justify-content:space-between;
-
     padding:5px;
-
 }
-
-
-
-/* PROGRESS BAR */
-
-.complete,
-.current,
-.locked {
-
-    display:inline-block;
-
-    margin:8px;
-
-    padding:8px;
-
-}
-
-
-
-/* FINAL TEAM SCREEN */
 
 .team-summary {
-
     text-align:center;
-
 }
-
-
 
 .team-card {
-
-    background:linear-gradient(#222,#111);
-
-    border:2px solid #ff6600;
-
+    background:#f2f2f2;
+    color:black;
     padding:15px;
-
-    margin:15px auto;
-
-    border-radius:15px;
-
+    margin:10px auto;
+    border-radius:12px;
     max-width:400px;
-
 }
-
-
-
-.team-card h3 {
-
-    color:#ff6600;
-
-    margin-bottom:10px;
-
-}
-
-
 
 .team-card strong {
-
-    font-size:30px;
-
-    color:#ff6600;
-
+    font-size:24px;
     margin-right:10px;
-
 }
-
-
-
-.team-card small {
-
-    opacity:.7;
-
-}
-
-
-
-/* TEAM OVERALL BOX */
 
 .overall-box {
-
-    margin:30px auto;
-
-    padding:25px;
-
+    margin:25px auto;
+    padding:20px;
     max-width:300px;
-
-    border:3px solid #ff6600;
-
     border-radius:15px;
-
-    background:#222;
-
-}
-
-
-.overall-box h1 {
-
-    color:#ff6600;
-
-}
-
-
-.overall-box h2 {
-
-    font-size:70px;
-
-    margin:0;
-
-    color:white;
-
-}
-
-
-
-/* SEASON DRAW SCREEN */
-
-#result {
-
-    margin-top:30px;
-
-}
-
-
-#result h1 {
-
-    color:#ff6600;
-
+    background:#ff6600;
+    color:black;
 }
