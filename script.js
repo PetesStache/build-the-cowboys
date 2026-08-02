@@ -534,7 +534,6 @@ function buildTeam(){
 
         scheduleHTML += `
 
-        scheduleHTML += `
 
 <div class="schedule-row">
 
