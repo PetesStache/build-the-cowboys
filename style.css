@@ -380,25 +380,34 @@ button:hover {
 
 
 /* ===========================
-   TEAM OVERALL BOX
+   TEAM OVERALL CARD
 =========================== */
-
 
 .overall-box {
 
-    margin:25px auto;
+    margin:35px auto;
 
-    padding:20px;
+    width:300px;
 
-    max-width:300px;
+    padding:25px;
 
-    border-radius:15px;
-
-    background:#ff6600;
+    background:linear-gradient(
+        145deg,
+        #ff6600,
+        #cc5200
+    );
 
     color:black;
 
-    box-shadow:0 8px 20px rgba(0,0,0,.5);
+    border-radius:20px;
+
+    border:4px solid white;
+
+    box-shadow:
+        0 0 20px rgba(255,102,0,.7),
+        0 10px 25px rgba(0,0,0,.6);
+
+    text-transform:uppercase;
 
 }
 
@@ -406,9 +415,15 @@ button:hover {
 
 .overall-box h1 {
 
-    font-family:'Bebas Neue',sans-serif;
+    font-family:'Bebas Neue', sans-serif;
 
-    letter-spacing:2px;
+    font-size:28px;
+
+    letter-spacing:3px;
+
+    margin:0 0 10px;
+
+    color:black;
 
 }
 
@@ -416,10 +431,17 @@ button:hover {
 
 .overall-box h2 {
 
+    font-family:'Bebas Neue', sans-serif;
+
+    font-size:90px;
+
+    line-height:1;
+
+    margin:0;
+
     color:black;
 
-    font-size:75px;
-
-    font-family:'Bebas Neue',sans-serif;
+    text-shadow:
+        2px 2px 0 white;
 
 }
