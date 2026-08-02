@@ -511,12 +511,12 @@ function calculateOverall(){
     total += team.rb.overall;
     
     team.wr.forEach(player=>{
-        total += player.overall;
-    });
+    total += player.overall || 0;
+});
 
     total += team.te.overall;
-    total += team.ol.overall * 2;
-    total += team.defense.overall * 2;
+    total += team.ol.overall * 2 || 0;
+total += team.defense.overall * 2 || 0;
 
 
     let weight = 2 + 1 + 3 + 1 + 2 + 2;
