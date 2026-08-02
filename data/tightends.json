@@ -1,107 +1,47 @@
 [
   {
     "name": "Brandon Pettigrew",
-    "years": "2005-2008",
-    "overall": 94,
-    "tier": "Orange Legend",
-    "visible": {
-      "hands": 96,
-      "speed": 84,
-      "blocking": 98,
-      "playmaking": 91
-    },
-    "hidden": {
-      "separation": 90,
-      "explosivePlays": 88,
-      "contestedCatch": 96,
-      "redZoneAbility": 94,
-      "blockingImpact": 99,
-      "consistency": 96,
-      "eraAdjustment": 4
-    }
-  },
-  {
-    "name": "Charlie Moore",
-    "years": "1984-1987",
-    "overall": 90,
-    "tier": "Orange Legend",
-    "visible": {
-      "hands": 92,
-      "speed": 82,
-      "blocking": 94,
-      "playmaking": 88
-    },
-    "hidden": {
-      "separation": 88,
-      "explosivePlays": 84,
-      "contestedCatch": 93,
-      "redZoneAbility": 91,
-      "blockingImpact": 95,
-      "consistency": 94,
-      "eraAdjustment": 8
-    }
+    "years": "2004-2008",
+    "overall": 96
   },
   {
     "name": "Blake Jarwin",
-    "years": "2013-2017",
-    "overall": 89,
-    "tier": "Black Legend",
-    "visible": {
-      "hands": 94,
-      "speed": 86,
-      "blocking": 80,
-      "playmaking": 91
-    },
-    "hidden": {
-      "separation": 91,
-      "explosivePlays": 88,
-      "contestedCatch": 92,
-      "redZoneAbility": 94,
-      "blockingImpact": 78,
-      "consistency": 92,
-      "eraAdjustment": 3
-    }
+    "years": "2013-2016",
+    "overall": 87
   },
   {
-    "name": "Jelani Woods",
-    "years": "2019-2021",
-    "overall": 88,
-    "tier": "Black Legend",
-    "visible": {
-      "hands": 91,
-      "speed": 89,
-      "blocking": 82,
-      "playmaking": 92
-    },
-    "hidden": {
-      "separation": 89,
-      "explosivePlays": 91,
-      "contestedCatch": 95,
-      "redZoneAbility": 96,
-      "blockingImpact": 80,
-      "consistency": 87,
-      "eraAdjustment": 3
-    }
+    "name": "Marcellus Rivers",
+    "years": "1993-1996",
+    "overall": 84
   },
   {
     "name": "Billy Bajema",
-    "years": "2001-2004",
-    "overall": 86,
-    "tier": "Cowboy",
-    "visible": {
-      "hands": 88,
-      "speed": 78,
-      "blocking": 94,
-      "playmaking": 82
-    },
-    "hidden": {
-      "separation": 80,
-      "explosivePlays": 78,
-      "contestedCatch": 88,
-      "redZoneAbility": 84,
-      "blockingImpact": 96,
-      "consistency": 92,
-      "eraAdjustment": 6
-    }
+    "years": "2000-2004",
+    "overall": 82
+  },
+  {
+    "name": "Alonzo Mayes",
+    "years": "1991-1994",
+    "overall": 81
+  },
+  {
+    "name": "Jelani Woods",
+    "years": "2020-2021",
+    "overall": 79
+  },
+  {
+    "name": "John Chesley",
+    "years": "1980s",
+    "overall": 78
+  },
+  {
+    "name": "Donnie Echols",
+    "years": "1980s",
+    "overall": 77
+  },
+  {
+    "name": "Reuben Gant",
+    "years": "1990s",
+    "overall": 76
   }
 ]
