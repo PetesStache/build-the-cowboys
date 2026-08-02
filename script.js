@@ -382,21 +382,49 @@ function showFinalTeam(){
 
 
         <div class="player-card">
-    <div class="rating">${team.wr[0].overall}</div>
-    <h3>${team.wr[0].name}</h3>
-    <p>${team.wr[0].years}</p>
+
+<h3>WR</h3>
+
+<div class="rating">
+${team.wr[0].overall}
 </div>
 
-<div class="player-card">
-    <div class="rating">${team.wr[1].overall}</div>
-    <h3>${team.wr[1].name}</h3>
-    <p>${team.wr[1].years}</p>
+<h3>${team.wr[0].name}</h3>
+
+<p>${team.wr[0].years}</p>
+
 </div>
 
+
+
 <div class="player-card">
-    <div class="rating">${team.wr[2].overall}</div>
-    <h3>${team.wr[2].name}</h3>
-    <p>${team.wr[2].years}</p>
+
+<h3>WR</h3>
+
+<div class="rating">
+${team.wr[1].overall}
+</div>
+
+<h3>${team.wr[1].name}</h3>
+
+<p>${team.wr[1].years}</p>
+
+</div>
+
+
+
+<div class="player-card">
+
+<h3>WR</h3>
+
+<div class="rating">
+${team.wr[2].overall}
+</div>
+
+<h3>${team.wr[2].name}</h3>
+
+<p>${team.wr[2].years}</p>
+
 </div>
 
 
