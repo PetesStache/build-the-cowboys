@@ -485,7 +485,7 @@ function showFinalTeam(){
 
         <button onclick="buildTeam()">
 
-        🎟 DRAW MY SEASON
+        DRAW MY SEASON
 
         </button>
 
@@ -576,7 +576,7 @@ function buildTeam(){
 
 
         <h1>
-        🎟 SEASON DRAW
+        SEASON DRAW
         </h1>
 
 
@@ -690,7 +690,7 @@ function startSeason(season){
 
         let winChance =
             50
-            + (ratingDifference * 1.5)
+            + (ratingDifference * 2.25)
             + (offensiveEdge * .5)
             + (defensiveEdge * .5);
 
