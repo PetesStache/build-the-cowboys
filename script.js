@@ -653,43 +653,72 @@ function startSeason(season){
 
     let teamOverall = calculateOverall();
 
+    let offense =
+        Math.round(
+            (team.qb.overall +
+            team.rb.overall +
+            team.wr[0].overall +
+            team.wr[1].overall +
+            team.wr[2].overall +
+            team.te.overall +
+            team.ol.overall) / 7
+        );
+
+
+    let defense = team.defense.overall;
+
 
     let wins = 0;
     let losses = 0;
 
-
     let results = "";
-
 
 
     season.games.forEach((game,index)=>{
 
 
-        let advantage = teamOverall - game.difficulty;
+        // Overall team advantage
+
+        let ratingDifference =
+            teamOverall - game.difficulty;
 
 
-        let winChance = 50 + (advantage * 5);
+        // Offense/defense impact
+
+        let offensiveEdge =
+            offense - game.difficulty;
+
+
+        let defensiveEdge =
+            defense - game.difficulty;
 
 
 
-        // Keep games competitive
+        let winChance =
+            50
+            + (ratingDifference * 1.5)
+            + (offensiveEdge * .5)
+            + (defensiveEdge * .5);
 
-        if(winChance > 85){
 
-            winChance = 85;
 
+        // Prevent ridiculous outcomes
+
+        if(winChance > 90){
+            winChance = 90;
         }
 
 
-        if(winChance < 15){
-
-            winChance = 15;
-
+        if(winChance < 10){
+            winChance = 10;
         }
 
 
 
-        let won = Math.random() * 100 < winChance;
+        let roll = Math.random()*100;
+
+
+        let won = roll < winChance;
 
 
 
@@ -698,50 +727,43 @@ function startSeason(season){
 
 
 
-
         if(won){
-
 
             wins++;
 
 
-            teamScore = Math.floor(
-                28 + Math.random() * 14
+            teamScore =
+            Math.floor(
+                24 + Math.random()*20
             );
 
 
-            opponentScore = Math.floor(
-                10 + Math.random() * 17
+            opponentScore =
+            Math.floor(
+                10 + Math.random()*17
             );
-
 
 
             results += `
 
-            <div class="team-card">
-
-            <h3>
-            ✅ Week ${index + 1}
-            </h3>
-
-
             <p>
+
+            ✅ Week ${index+1}
+
+            <br>
+
+            ${teamScore}-${opponentScore}
+
+            <br>
+
             vs ${game.opponent}
+
             </p>
-
-
-            <h2>
-            ${teamScore} - ${opponentScore}
-            </h2>
-
-
-            </div>
 
             `;
 
 
         }
-
 
 
         else{
@@ -750,37 +772,34 @@ function startSeason(season){
             losses++;
 
 
-            opponentScore = Math.floor(
-                24 + Math.random() * 20
+            opponentScore =
+            Math.floor(
+                21 + Math.random()*21
             );
 
 
-            teamScore = Math.floor(
-                10 + Math.random() * 17
+            teamScore =
+            Math.floor(
+                10 + Math.random()*17
             );
 
 
 
             results += `
 
-            <div class="team-card">
-
-            <h3>
-            ❌ Week ${index + 1}
-            </h3>
-
-
             <p>
+
+            ❌ Week ${index+1}
+
+            <br>
+
+            ${teamScore}-${opponentScore}
+
+            <br>
+
             vs ${game.opponent}
+
             </p>
-
-
-            <h2>
-            ${teamScore} - ${opponentScore}
-            </h2>
-
-
-            </div>
 
             `;
 
@@ -792,49 +811,60 @@ function startSeason(season){
 
 
 
-
     document.getElementById("result").innerHTML = `
 
 
     <div class="team-card">
 
 
-        <h1>
-        🏆 SEASON RESULTS
-        </h1>
+    <h1>
+    🏆 SEASON RESULTS
+    </h1>
+
+
+    <h2>
+    ${season.season}
+    </h2>
+
+
+    <h1>
+    Record:
+    ${wins}-${losses}
+    </h1>
+
+
+    <h3>
+    Team Overall:
+    ${teamOverall}
+    </h3>
+
+
+    <h3>
+    Offense:
+    ${offense}
+    </h3>
+
+
+    <h3>
+    Defense:
+    ${defense}
+    </h3>
+
+
+    <h2>
+    Games
+    </h2>
+
+
+    ${results}
 
 
 
-        <h2>
-        ${season.season}
-        </h2>
+    <button onclick="location.reload()">
 
+    🔄 BUILD NEW TEAM
 
-
-
-        <h1>
-        ${wins}-${losses}
-        </h1>
-
-
-
-        <h3>
-        Team Overall:
-        ${teamOverall}
-        </h3>
-
-
-
-        ${results}
-
-
-
-        <button onclick="location.reload()">
-
-        🔄 BUILD NEW TEAM
-
-        </button>
-
+    </button>
 
 
     </div>
