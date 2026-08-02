@@ -647,7 +647,17 @@ function buildTeam(){
 
 
 }
-// START SEASON SIMULATION
+
+${scheduleHTML}
+
+<button onclick="startSeason(season)">
+🏈 BEGIN SEASON
+</button>
+
+</div>
+
+`;
+}
 
 function startSeason(season){
 
