@@ -732,21 +732,25 @@ function startSeason(season){
 
             results += `
 
-            <p>
+<div class="schedule-row">
 
-            ✅ Week ${index+1}
+    <div class="schedule-left">
 
-            <br>
+        <strong>Week ${index+1}</strong>
 
-            ${teamScore}-${opponentScore}
+        vs ${game.opponent}
 
-            <br>
+    </div>
 
-            vs ${game.opponent}
+    <div class="schedule-right win">
 
-            </p>
+        ✅ ${teamScore}-${opponentScore}
 
-            `;
+    </div>
+
+</div>
+
+`;
 
 
         }
@@ -773,21 +777,25 @@ function startSeason(season){
 
             results += `
 
-            <p>
+<div class="schedule-row">
 
-            ❌ Week ${index+1}
+    <div class="schedule-left">
 
-            <br>
+        <strong>Week ${index+1}</strong>
 
-            ${teamScore}-${opponentScore}
+        vs ${game.opponent}
 
-            <br>
+    </div>
 
-            vs ${game.opponent}
+    <div class="schedule-right loss">
 
-            </p>
+        ❌ ${teamScore}-${opponentScore}
 
-            `;
+    </div>
+
+</div>
+
+`;
 
 
         }
