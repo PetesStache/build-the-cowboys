@@ -334,7 +334,7 @@ function showFinalTeam(){
 
 
     document.getElementById("step-title").innerHTML =
-    "🏈 YOUR OKLAHOMA STATE LEGEND TEAM";
+    " YOUR OKLAHOMA STATE TEAM";
 
 
     document.getElementById("players").innerHTML = `
@@ -343,7 +343,7 @@ function showFinalTeam(){
     <div class="team-summary">
 
 
-        <h2>🟧 OFFENSE</h2>
+        <h2> OFFENSE</h2>
 
 
 
@@ -441,7 +441,7 @@ function showFinalTeam(){
 
 
 
-        <h2>⚫ DEFENSE</h2>
+        <h2> DEFENSE</h2>
 
 
 
@@ -635,7 +635,7 @@ function buildTeam(){
 ${scheduleHTML}
 
 <button onclick="startSeason(currentSeason)">
-🏈 BEGIN SEASON
+BEGIN SEASON
 </button>
 
 </div>
@@ -691,20 +691,20 @@ function startSeason(season){
         let winChance =
             50
             + (ratingDifference * 2.25)
-            + (offensiveEdge * .5)
-            + (defensiveEdge * .5);
+            + (offensiveEdge * .75)
+            + (defensiveEdge * .75);
 
 
 
         // Prevent ridiculous outcomes
 
-        if(winChance > 90){
-            winChance = 90;
+        if(winChance > 95){
+            winChance = 95;
         }
 
 
-        if(winChance < 10){
-            winChance = 10;
+        if(winChance < 5){
+            winChance = 5;
         }
 
 
@@ -812,7 +812,7 @@ function startSeason(season){
 
 
     <h1>
-    🏆 SEASON RESULTS
+     SEASON RESULTS
     </h1>
 
 
@@ -856,7 +856,7 @@ function startSeason(season){
 
     <button onclick="location.reload()">
 
-    🔄 BUILD NEW TEAM
+     BUILD NEW TEAM
 
     </button>
 
