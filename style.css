@@ -80,7 +80,6 @@ button:hover {
 .player-card {
     display:inline-block;
     width:220px;
-    min-height:135px;
     background:linear-gradient(#222,#111);
     border:3px solid #ff6600;
     border-radius:15px;
@@ -90,6 +89,9 @@ button:hover {
     transition:.3s;
     vertical-align:top;
     box-shadow:0 8px 20px rgba(0,0,0,.5);
+    height:220px;
+    box-sizing:border-box;
+}
 }
 
 .player-card:hover {
