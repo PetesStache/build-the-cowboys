@@ -537,7 +537,7 @@ function buildTeam(){
     let scheduleHTML = "";
 
 
-    season.games.forEach((game,index)=>{
+    currentseason.games.forEach((game,index)=>{
 
 
         scheduleHTML += `
@@ -580,7 +580,7 @@ function buildTeam(){
 
 
         <h2>
-        ${season.season}
+        ${currentseason.season}
         </h2>
 
 
@@ -588,35 +588,35 @@ function buildTeam(){
 
         <p>
         Coach:
-        ${season.coach}
+        ${currentseason.coach}
         </p>
 
 
 
         <p>
         Historical Record:
-        ${season.record}
+        ${currentseason.record}
         </p>
 
 
 
         <p>
         Conference:
-        ${season.conference}
+        ${currentseason.conference}
         </p>
 
 
 
         <p>
         Difficulty:
-        ${"⭐".repeat(season.difficulty)}
+        ${"⭐".repeat(currentseason.difficulty)}
         </p>
 
 
 
         <p>
         Average Opponent Rating:
-        ${season.averageOpponentRating}
+        ${currentseason.averageOpponentRating}
         </p>
 
 
@@ -632,7 +632,7 @@ function buildTeam(){
 
 ${scheduleHTML}
 
-<button onclick="startSeason(season)">
+<button onclick="startSeason(currentSeason)">
 🏈 BEGIN SEASON
 </button>
 
