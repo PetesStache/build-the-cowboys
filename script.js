@@ -611,7 +611,7 @@ function buildTeam(){
 
         <p>
         Difficulty:
-        ${"⭐".repeat(season.difficulty)}
+        ${"⭐".repeat(Math.ceil(season.difficulty / 2))}
         </p>
 
 
