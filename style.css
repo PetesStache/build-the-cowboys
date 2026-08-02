@@ -140,18 +140,37 @@ button:hover {
 
 
 .team-card {
-    background:#f2f2f2;
-    color:black;
-    padding:15px;
-    margin:10px auto;
-    border-radius:12px;
-    max-width:400px;
+    display:inline-block;
+    width:320px;
+    background:linear-gradient(#222,#111);
+    border:3px solid #ff6600;
+    border-radius:15px;
+    margin:15px;
+    padding:20px;
+    color:white;
+    box-shadow:0 8px 20px rgba(0,0,0,.5);
+    transition:.3s;
 }
 
+.team-card:hover{
+    transform:scale(1.02);
+}
 
-.team-card strong {
+.team-card h1,
+.team-card h2,
+.team-card h3{
+    color:#ff6600;
+    margin:10px 0;
+}
+
+.team-card p{
+    color:white;
+    line-height:1.5;
+}
+
+.team-card strong{
+    color:#ff6600;
     font-size:24px;
-    margin-right:10px;
 }
 
 
@@ -173,6 +192,6 @@ button:hover {
 
 .overall-box h2 {
     color:black;
-    font-size:50px;
+    font-size:75px;
     font-family:'Bebas Neue', sans-serif;
 }
