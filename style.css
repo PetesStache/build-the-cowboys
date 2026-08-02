@@ -11,9 +11,24 @@ body {
     padding:30px;
 }
 
+.header h1 {
+    font-family:'Bebas Neue', sans-serif;
+    font-size:60px;
+    letter-spacing:2px;
+    margin:0;
+}
+
+.header p {
+    font-size:18px;
+}
+
+
 h2 {
     color:#ff6600;
+    font-family:'Bebas Neue', sans-serif;
+    letter-spacing:1px;
 }
+
 
 .option {
     display:inline-block;
@@ -25,13 +40,16 @@ h2 {
     border-radius:10px;
 }
 
+
 .option:hover {
     background:#ff6600;
 }
 
+
 .selected {
     background:#ff6600;
 }
+
 
 button {
     margin:30px;
@@ -45,10 +63,12 @@ button {
     cursor:pointer;
 }
 
+
 button:hover {
     background:#ff8533;
     color:black;
 }
+
 
 .player-card {
     display:inline-block;
@@ -64,14 +84,17 @@ button:hover {
     vertical-align:top;
 }
 
+
 .player-card:hover {
     transform:scale(1.05);
 }
+
 
 .player-card.selected {
     background:#ff6600;
     color:black;
 }
+
 
 .rating {
     font-size:55px;
@@ -80,19 +103,23 @@ button:hover {
     margin-bottom:10px;
 }
 
+
 .player-card.selected .rating {
     color:black;
 }
+
 
 .player-card h3 {
     margin:8px 0 5px;
     font-size:22px;
 }
 
+
 .player-card p {
     margin:0;
     font-size:16px;
 }
+
 
 .stat {
     display:flex;
@@ -100,9 +127,11 @@ button:hover {
     padding:5px;
 }
 
+
 .team-summary {
     text-align:center;
 }
+
 
 .team-card {
     background:#f2f2f2;
@@ -113,10 +142,12 @@ button:hover {
     max-width:400px;
 }
 
+
 .team-card strong {
     font-size:24px;
     margin-right:10px;
 }
+
 
 .overall-box {
     margin:25px auto;
@@ -127,6 +158,15 @@ button:hover {
     color:black;
 }
 
+
+.overall-box h1 {
+    font-family:'Bebas Neue', sans-serif;
+    letter-spacing:2px;
+}
+
+
 .overall-box h2 {
     color:black;
+    font-size:50px;
+    font-family:'Bebas Neue', sans-serif;
 }
