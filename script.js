@@ -534,25 +534,27 @@ function buildTeam(){
 
         scheduleHTML += `
 
-        <div class="team-card">
+        scheduleHTML += `
 
-            <h3>
-            Week ${index + 1}
-            </h3>
+<div class="schedule-row">
 
-            <p>
-            Opponent:
-            ${game.opponent}
-            </p>
+    <div class="schedule-left">
 
-            <p>
-            Opponent Rating:
-            ${game.difficulty}
-            </p>
+        <strong>Week ${index + 1}</strong>
 
-        </div>
+        ${game.opponent}
 
-        `;
+    </div>
+
+    <div class="schedule-right">
+
+        ${game.difficulty} OVR
+
+    </div>
+
+</div>
+
+`;
 
 
     });
