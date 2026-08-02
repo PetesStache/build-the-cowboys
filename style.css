@@ -445,3 +445,56 @@ button:hover {
         2px 2px 0 white;
 
 }
+/* ===========================
+   WIDE TEAM CARD FOR SEASONS
+=========================== */
+
+.wide-card {
+
+    width:85%;
+    max-width:1000px;
+
+}
+/* ===========================
+   BIGGER SEASON TEXT
+=========================== */
+
+.wide-card h1 {
+    font-size:42px;
+}
+
+.wide-card h2 {
+    font-size:32px;
+}
+
+.wide-card h3 {
+    font-size:24px;
+}
+
+
+.wide-card p {
+    font-size:22px;
+}
+
+
+.wide-card .schedule-row {
+
+    padding:22px 40px;
+
+    font-size:24px;
+
+}
+
+
+.wide-card .schedule-left strong {
+
+    font-size:26px;
+
+}
+
+
+.wide-card .schedule-right {
+
+    font-size:26px;
+
+}
