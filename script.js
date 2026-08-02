@@ -627,26 +627,7 @@ function buildTeam(){
 
 
 
-        ${scheduleHTML}
 
-
-
-
-        <button onclick='startSeason(${JSON.stringify(season)})'>
-
-        🏈 BEGIN SEASON
-
-        </button>
-
-
-
-    </div>
-
-
-    `;
-
-
-}
 
 ${scheduleHTML}
 
